@@ -10,7 +10,7 @@ function enviarDatos() {
     };
 
     // Realizar la solicitud al backend
-    fetch('http://localhost:8080/soat/consultar', {
+    fetch('/soat/consultar', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'
