@@ -1,244 +1,244 @@
-E:\Cursos\compa\src\main\java\com\mercadopago\client\payment\PaymentTransactionDetailsRequest.java
-E:\Cursos\compa\src\main\java\com\mercadopago\client\payment\PaymentItemRequest.java
-E:\Cursos\compa\src\main\java\com\mercadopago\client\point\PointPaymentIntentListRequest.java
-E:\Cursos\compa\src\main\java\com\mercadopago\resources\payment\PaymentData.java
-E:\Cursos\compa\src\main\java\Unad\telecom_fase5\servicios\consultaVerifik\VehicleService.java
-E:\Cursos\compa\src\main\java\com\mercadopago\resources\point\PointSearchPaymentIntent.java
-E:\Cursos\compa\src\main\java\com\mercadopago\resources\ResultsPaging.java
-E:\Cursos\compa\src\main\java\com\mercadopago\resources\preference\PreferenceFreeMethod.java
-E:\Cursos\compa\src\main\java\com\mercadopago\client\payment\PaymentAdditionalInfoPayerRequest.java
-E:\Cursos\compa\src\main\java\com\mercadopago\client\common\SubMerchant.java
-E:\Cursos\compa\src\main\java\com\mercadopago\client\preference\PreferencePaymentMethodsRequest.java
-E:\Cursos\compa\src\main\java\Unad\telecom_fase5\entity\pago\PagoPseDTO.java
-E:\Cursos\compa\src\main\java\com\mercadopago\client\preference\PreferenceDifferentialPricingRequest.java
-E:\Cursos\compa\src\main\java\com\mercadopago\client\point\PointPaymentIntentRequest.java
-E:\Cursos\compa\src\main\java\com\mercadopago\client\payment\PaymentPassengerRequest.java
-E:\Cursos\compa\src\main\java\com\mercadopago\client\merchantorder\MerchantOrderShippingSpeedRequest.java
-E:\Cursos\compa\src\main\java\com\mercadopago\resources\payment\PaymentRefund.java
-E:\Cursos\compa\src\main\java\com\mercadopago\resources\preapproval\PreapprovalAutoRecurring.java
-E:\Cursos\compa\src\main\java\Unad\telecom_fase5\entity\soat\Vehiculo.java
-E:\Cursos\compa\src\main\java\Unad\telecom_fase5\entity\consultaVerifik\UserEntity.java
-E:\Cursos\compa\src\main\java\com\mercadopago\resources\point\PointPaymentIntentPayment.java
-E:\Cursos\compa\src\main\java\com\mercadopago\client\payment\PaymentPayerPhoneRequest.java
-E:\Cursos\compa\src\main\java\com\mercadopago\client\preference\PreferenceItemRequest.java
-E:\Cursos\compa\src\main\java\com\mercadopago\resources\payment\PaymentRules.java
-E:\Cursos\compa\src\main\java\com\mercadopago\TarjetaCreditDEbit.java
-E:\Cursos\compa\src\main\java\com\mercadopago\resources\preference\PreferenceTrackValues.java
-E:\Cursos\compa\src\main\java\com\mercadopago\resources\merchantorder\MerchantOrderReceiverAddressCity.java
-E:\Cursos\compa\src\main\java\com\mercadopago\client\payment\PaymentAuthenticationRequest.java
-E:\Cursos\compa\src\main\java\com\mercadopago\resources\merchantorder\MerchantOrder.java
-E:\Cursos\compa\src\main\java\com\mercadopago\client\payment\PaymentCategoryDescriptorRequest.java
-E:\Cursos\compa\src\main\java\com\mercadopago\resources\paymentmethod\PaymentMethodFinancialInstitutions.java
-E:\Cursos\compa\src\main\java\com\mercadopago\client\payment\PaymentCancelRequest.java
-E:\Cursos\compa\src\main\java\com\mercadopago\resources\merchantorder\MerchantOrderShippingEstimatedDelivery.java
-E:\Cursos\compa\src\main\java\com\mercadopago\client\oauth\OauthClient.java
-E:\Cursos\compa\src\main\java\com\mercadopago\client\preference\PreferenceShipmentsRequest.java
-E:\Cursos\compa\src\main\java\com\mercadopago\resources\payment\PaymentApplicationData.java
-E:\Cursos\compa\src\main\java\com\mercadopago\resources\customer\CustomerAddressCity.java
-E:\Cursos\compa\src\main\java\com\mercadopago\client\payment\PaymentTransactionDataRequest.java
-E:\Cursos\compa\src\main\java\com\mercadopago\resources\preference\PreferenceReceiverAddress.java
-E:\Cursos\compa\src\main\java\com\mercadopago\resources\payment\PaymentPointOfInteraction.java
-E:\Cursos\compa\src\main\java\com\mercadopago\resources\preference\PreferenceBackUrls.java
-E:\Cursos\compa\src\main\java\com\mercadopago\net\KeepAliveStrategy.java
-E:\Cursos\compa\src\main\java\com\mercadopago\net\MPResourceList.java
-E:\Cursos\compa\src\main\java\com\mercadopago\resources\paymentmethod\PaymentMethod.java
-E:\Cursos\compa\src\main\java\com\mercadopago\client\user\UserClient.java
-E:\Cursos\compa\src\main\java\com\mercadopago\net\HttpStatus.java
-E:\Cursos\compa\src\main\java\com\mercadopago\client\merchantorder\MerchantOrderReceiverAddressCityRequest.java
-E:\Cursos\compa\src\main\java\com\mercadopago\resources\point\PointStatusPaymentIntent.java
-E:\Cursos\compa\src\main\java\com\mercadopago\resources\customer\CustomerCardCardholderIdentification.java
-E:\Cursos\compa\src\main\java\com\mercadopago\client\oauth\CreateOauthCredentialRequest.java
-E:\Cursos\compa\src\main\java\com\mercadopago\client\merchantorder\MerchantOrderCreateRequest.java
-E:\Cursos\compa\src\main\java\com\mercadopago\resources\common\Address.java
-E:\Cursos\compa\src\main\java\com\mercadopago\resources\customer\CustomerAddressState.java
-E:\Cursos\compa\src\main\java\com\mercadopago\client\point\PointClient.java
-E:\Cursos\compa\src\main\java\com\mercadopago\resources\merchantorder\MerchantOrderReceiverAddressState.java
-E:\Cursos\compa\src\main\java\com\mercadopago\resources\point\PointDevice.java
-E:\Cursos\compa\src\main\java\com\mercadopago\client\payment\PaymentForwardDataRequest.java
-E:\Cursos\compa\src\main\java\com\mercadopago\resources\preference\PreferenceDifferentialPricing.java
-E:\Cursos\compa\src\main\java\com\mercadopago\resources\preference\PreferencePayer.java
-E:\Cursos\compa\src\main\java\com\mercadopago\net\MPElementsResourcesPage.java
-E:\Cursos\compa\src\main\java\com\mercadopago\client\merchantorder\MerchantOrderPayerRequest.java
-E:\Cursos\compa\src\main\java\com\mercadopago\client\merchantorder\MerchantOrderReceiverAddressCountryRequest.java
-E:\Cursos\compa\src\main\java\com\mercadopago\MercadoPagoConfig.java
-E:\Cursos\compa\src\main\java\com\mercadopago\client\preapproval\PreApprovalAutoRecurringCreateRequest.java
-E:\Cursos\compa\src\main\java\com\mercadopago\client\preference\PreferenceTaxRequest.java
-E:\Cursos\compa\src\main\java\Unad\telecom_fase5\entity\consultaVerifik\UserDTO.java
-E:\Cursos\compa\src\main\java\com\mercadopago\client\common\AddressRequest.java
-E:\Cursos\compa\src\main\java\com\mercadopago\resources\point\PointDeviceOperatingMode.java
-E:\Cursos\compa\src\main\java\com\mercadopago\client\paymentmethod\PaymentMethodClient.java
-E:\Cursos\compa\src\main\java\com\mercadopago\net\UrlFormatter.java
-E:\Cursos\compa\src\main\java\com\mercadopago\resources\payment\PaymentCard.java
-E:\Cursos\compa\src\main\java\com\mercadopago\client\preference\PreferenceBackUrlsRequest.java
-E:\Cursos\compa\src\main\java\com\mercadopago\client\merchantorder\MerchantOrderShippingOptionRequest.java
-E:\Cursos\compa\src\main\java\com\mercadopago\resources\point\PointPaymentIntent.java
-E:\Cursos\compa\src\main\java\com\mercadopago\exceptions\MPApiException.java
-E:\Cursos\compa\src\main\java\com\mercadopago\client\payment\PaymentShipmentsRequest.java
-E:\Cursos\compa\src\main\java\com\mercadopago\client\payment\PaymentOrderRequest.java
-E:\Cursos\compa\src\main\java\com\mercadopago\resources\merchantorder\MerchantOrderCollector.java
-E:\Cursos\compa\src\main\java\com\mercadopago\resources\merchantorder\MerchantOrderShipment.java
-E:\Cursos\compa\src\main\java\com\mercadopago\resources\customer\Customer.java
-E:\Cursos\compa\src\main\java\com\mercadopago\resources\payment\PaymentAdditionalInfo.java
-E:\Cursos\compa\src\main\java\com\mercadopago\resources\preference\PreferenceTax.java
-E:\Cursos\compa\src\main\java\com\mercadopago\client\customer\CustomerCardClient.java
-E:\Cursos\compa\src\main\java\com\mercadopago\client\preference\PreferencePaymentTypeRequest.java
-E:\Cursos\compa\src\main\java\com\mercadopago\net\MPResource.java
-E:\Cursos\compa\src\main\java\com\mercadopago\client\preference\PreferenceClient.java
-E:\Cursos\compa\src\main\java\com\mercadopago\resources\payment\PaymentFee.java
-E:\Cursos\compa\src\main\java\com\mercadopago\resources\merchantorder\MerchantOrderReceiverAddressCountry.java
-E:\Cursos\compa\src\main\java\com\mercadopago\client\preference\PreferenceReceiverAddressRequest.java
-E:\Cursos\compa\src\main\java\com\mercadopago\resources\payment\Payment.java
-E:\Cursos\compa\src\main\java\com\mercadopago\resources\payment\PaymentShipments.java
-E:\Cursos\compa\src\main\java\com\mercadopago\resources\customer\CustomerCardPaymentMethod.java
-E:\Cursos\compa\src\main\java\com\mercadopago\client\customer\CustomerAddressRequest.java
-E:\Cursos\compa\src\main\java\com\mercadopago\client\merchantorder\MerchantOrderClient.java
-E:\Cursos\compa\src\main\java\com\mercadopago\client\merchantorder\MerchantOrderShippingEstimatedDeliveryRequest.java
-E:\Cursos\compa\src\main\java\com\mercadopago\resources\payment\PaymentReceiverAddress.java
-E:\Cursos\compa\src\main\java\com\mercadopago\resources\payment\PaymentTax.java
-E:\Cursos\compa\src\main\java\com\mercadopago\resources\preference\PreferencePaymentMethod.java
-E:\Cursos\compa\src\main\java\com\mercadopago\client\payment\PaymentClient.java
-E:\Cursos\compa\src\main\java\com\mercadopago\client\payment\PaymentCreateRequest.java
-E:\Cursos\compa\src\main\java\com\mercadopago\client\merchantorder\MerchantOrderReceiverAddressStateRequest.java
-E:\Cursos\compa\src\main\java\com\mercadopago\client\payment\PaymentDiscountRequest.java
-E:\Cursos\compa\src\main\java\com\mercadopago\net\MPResponse.java
-E:\Cursos\compa\src\main\java\com\mercadopago\resources\merchantorder\MerchantOrderItem.java
-E:\Cursos\compa\src\main\java\com\mercadopago\client\payment\PaymentCaptureRequest.java
-E:\Cursos\compa\src\main\java\com\mercadopago\client\point\OperatingMode.java
-E:\Cursos\compa\src\main\java\com\mercadopago\resources\customer\CustomerAddress.java
-E:\Cursos\compa\src\main\java\com\mercadopago\resources\preference\PreferenceItem.java
-E:\Cursos\compa\src\main\java\com\mercadopago\client\payment\PaymentRouteRequest.java
-E:\Cursos\compa\src\main\java\com\mercadopago\client\merchantorder\MerchantOrderReceiverAddressRequest.java
-E:\Cursos\compa\src\main\java\com\mercadopago\client\payment\PaymentTaxRequest.java
-E:\Cursos\compa\src\main\java\Unad\telecom_fase5\controller\pago\PagoPSEController.java
-E:\Cursos\compa\src\main\java\com\mercadopago\resources\payment\PaymentInvoicePeriod.java
-E:\Cursos\compa\src\main\java\com\mercadopago\resources\customer\Identification.java
-E:\Cursos\compa\src\main\java\com\mercadopago\resources\preference\PreferenceRoute.java
-E:\Cursos\compa\src\main\java\com\mercadopago\exceptions\MPMalformedRequestException.java
-E:\Cursos\compa\src\main\java\com\mercadopago\client\preapproval\PreapprovalClient.java
-E:\Cursos\compa\src\main\java\com\mercadopago\resources\point\PointPaymentIntentAdditionalInfo.java
-E:\Cursos\compa\src\main\java\com\mercadopago\resources\payment\PaymentStatus.java
-E:\Cursos\compa\src\main\java\com\mercadopago\resources\identificationtype\IdentificationType.java
-E:\Cursos\compa\src\main\java\com\mercadopago\resources\paymentmethod\PaymentMethodSettings.java
-E:\Cursos\compa\src\main\java\com\mercadopago\resources\payment\PaymentBarcode.java
-E:\Cursos\compa\src\main\java\com\mercadopago\client\preference\PreferenceTrackValuesRequest.java
-E:\Cursos\compa\src\main\java\com\mercadopago\resources\paymentmethod\PaymentMethodSettingsBin.java
-E:\Cursos\compa\src\main\java\com\mercadopago\client\preference\PreferenceFreeMethodRequest.java
-E:\Cursos\compa\src\main\java\com\mercadopago\client\payment\PaymentMerchantServicesRequest.java
-E:\Cursos\compa\src\main\java\com\mercadopago\resources\payment\PaymentAdditionalInfoPayer.java
-E:\Cursos\compa\src\main\java\com\mercadopago\resources\CardToken.java
-E:\Cursos\compa\src\main\java\com\mercadopago\net\MPDefaultHttpClient.java
-E:\Cursos\compa\src\main\java\com\mercadopago\resources\customer\CustomerAddressMunicipality.java
-E:\Cursos\compa\src\main\java\Unad\telecom_fase5\controller\soat\GenerarSoatPdfController.java
-E:\Cursos\compa\src\main\java\com\mercadopago\client\payment\PaymentAdditionalInfoRequest.java
-E:\Cursos\compa\src\main\java\com\mercadopago\core\MPRequestOptions.java
-E:\Cursos\compa\src\main\java\com\mercadopago\resources\merchantorder\MerchantOrderReceiverAddress.java
-E:\Cursos\compa\src\main\java\com\mercadopago\exceptions\MPException.java
-E:\Cursos\compa\src\main\java\com\mercadopago\client\preference\PreferenceTrackRequest.java
-E:\Cursos\compa\src\main\java\com\mercadopago\PSE.java
-E:\Cursos\compa\src\main\java\com\mercadopago\client\common\PhoneRequest.java
-E:\Cursos\compa\src\main\java\Unad\telecom_fase5\entity\consultaVerifik\VehicleInfoAuxDTO.java
-E:\Cursos\compa\src\main\java\Unad\telecom_fase5\controller\pago\MediosDepagoController.java
-E:\Cursos\compa\src\main\java\com\mercadopago\client\preference\PreferenceRequest.java
-E:\Cursos\compa\src\main\java\com\mercadopago\resources\merchantorder\MerchantOrderPayment.java
-E:\Cursos\compa\src\main\java\com\mercadopago\client\customer\CustomerCardCreateRequest.java
-E:\Cursos\compa\src\main\java\com\mercadopago\resources\payment\PaymentFeeDetail.java
-E:\Cursos\compa\src\main\java\com\mercadopago\client\merchantorder\MerchantOrderShipmentRequest.java
-E:\Cursos\compa\src\main\java\com\mercadopago\client\payment\PaymentAdditionalInfoBarcodeRequest.java
-E:\Cursos\compa\src\main\java\com\mercadopago\net\Headers.java
-E:\Cursos\compa\src\main\java\com\mercadopago\resources\preference\PreferenceCategoryDescriptor.java
-E:\Cursos\compa\src\main\java\com\mercadopago\resources\payment\PaymentThreeDSInfo.java
-E:\Cursos\compa\src\main\java\com\mercadopago\resources\preference\PreferenceShipments.java
-E:\Cursos\compa\src\main\java\com\mercadopago\client\preference\PreferenceRouteRequest.java
-E:\Cursos\compa\src\main\java\com\mercadopago\resources\point\PointPaymentIntentListEvent.java
-E:\Cursos\compa\src\main\java\Unad\telecom_fase5\entity\vehiculo\JacksonConfig.java
-E:\Cursos\compa\src\main\java\com\mercadopago\resources\payment\PaymentTransactionData.java
-E:\Cursos\compa\src\main\java\com\mercadopago\resources\oauth\CreateOauthCredential.java
-E:\Cursos\compa\src\main\java\Unad\telecom_fase5\controller\ConsultaVerifik\UserController.java
-E:\Cursos\compa\src\main\java\com\mercadopago\resources\customer\CustomerAddressCountry.java
-E:\Cursos\compa\src\main\java\com\mercadopago\resources\customer\CustomerDefaultAddress.java
-E:\Cursos\compa\src\main\java\com\mercadopago\resources\common\Source.java
-E:\Cursos\compa\src\main\java\com\mercadopago\client\payment\PaymentPaymentReferenceRequest.java
-E:\Cursos\compa\src\main\java\Unad\telecom_fase5\TelecomFase5Application.java
-E:\Cursos\compa\src\main\java\com\mercadopago\resources\paymentmethod\PaymentMethodSettingsCardNumber.java
-E:\Cursos\compa\src\main\java\com\mercadopago\client\payment\PaymentSubscriptionSequenceRequest.java
-E:\Cursos\compa\src\main\java\com\mercadopago\resources\customer\CustomerCardCardholder.java
-E:\Cursos\compa\src\main\java\com\mercadopago\client\cardtoken\CardTokenRequest.java
-E:\Cursos\compa\src\main\java\com\mercadopago\resources\payment\PaymentBankInfo.java
-E:\Cursos\compa\src\main\java\com\mercadopago\client\payment\PaymentRefundCreateRequest.java
-E:\Cursos\compa\src\main\java\com\mercadopago\resources\payment\PaymentPayer.java
-E:\Cursos\compa\src\main\java\com\mercadopago\client\preapproval\PreapprovalCreateRequest.java
-E:\Cursos\compa\src\main\java\com\mercadopago\client\payment\PaymentRulesRequest.java
-E:\Cursos\compa\src\main\java\com\mercadopago\resources\paymentmethod\PaymentMethodSettingsSecurityCode.java
-E:\Cursos\compa\src\main\java\com\mercadopago\resources\common\Identification.java
-E:\Cursos\compa\src\main\java\com\mercadopago\resources\preference\PreferenceTrack.java
-E:\Cursos\compa\src\main\java\com\mercadopago\client\preference\PreferenceCategoryDescriptorRequest.java
-E:\Cursos\compa\src\main\java\com\mercadopago\resources\payment\PaymentSubscriptionSequence.java
-E:\Cursos\compa\src\main\java\com\mercadopago\resources\preference\PreferencePaymentMethods.java
-E:\Cursos\compa\src\main\java\com\mercadopago\resources\customer\CustomerAddressNeighborhood.java
-E:\Cursos\compa\src\main\java\com\mercadopago\resources\payment\PaymentTransactionDetails.java
-E:\Cursos\compa\src\main\java\com\mercadopago\net\MPSearchRequest.java
-E:\Cursos\compa\src\main\java\com\mercadopago\resources\common\Phone.java
-E:\Cursos\compa\src\main\java\com\mercadopago\resources\user\User.java
-E:\Cursos\compa\src\main\java\com\mercadopago\client\payment\PaymentMethodRequest.java
-E:\Cursos\compa\src\main\java\com\mercadopago\resources\preapproval\Preapproval.java
-E:\Cursos\compa\src\main\java\com\mercadopago\client\preference\PreferencePayerRequest.java
-E:\Cursos\compa\src\main\java\com\mercadopago\client\oauth\RefreshOauthCredentialRequest.java
-E:\Cursos\compa\src\main\java\com\mercadopago\client\preapproval\PreApprovalAutoRecurringUpdateRequest.java
-E:\Cursos\compa\src\main\java\com\mercadopago\resources\merchantorder\MerchantOrderShippingOption.java
-E:\Cursos\compa\src\main\java\com\mercadopago\resources\customer\CustomerCard.java
-E:\Cursos\compa\src\main\java\com\mercadopago\resources\payment\PaymentPaymentReference.java
-E:\Cursos\compa\src\main\java\com\mercadopago\resources\point\OperatingMode.java
-E:\Cursos\compa\src\main\java\com\mercadopago\resources\point\PointCancelPaymentIntent.java
-E:\Cursos\compa\src\main\java\com\mercadopago\net\MPResultsResourcesPage.java
-E:\Cursos\compa\src\main\java\com\mercadopago\client\payment\PaymentInvoicePeriodRequest.java
-E:\Cursos\compa\src\main\java\com\mercadopago\client\payment\PaymentDataRequest.java
-E:\Cursos\compa\src\main\java\com\mercadopago\resources\preference\Preference.java
-E:\Cursos\compa\src\main\java\com\mercadopago\client\payment\PaymentFeeRequest.java
-E:\Cursos\compa\src\main\java\com\mercadopago\client\customer\CustomerRequest.java
-E:\Cursos\compa\src\main\java\Unad\telecom_fase5\entity\vehiculo\VehicleInfo.java
-E:\Cursos\compa\src\main\java\com\mercadopago\net\HttpMethod.java
-E:\Cursos\compa\src\main\java\com\mercadopago\resources\point\PointDevices.java
-E:\Cursos\compa\src\main\java\com\mercadopago\client\preference\PreferencePaymentMethodRequest.java
-E:\Cursos\compa\src\main\java\com\mercadopago\resources\payment\PaymentMethod.java
-E:\Cursos\compa\src\main\java\com\mercadopago\client\payment\PaymentRefundClient.java
-E:\Cursos\compa\src\main\java\com\mercadopago\resources\point\PointPaymentIntentList.java
-E:\Cursos\compa\src\main\java\Unad\telecom_fase5\servicios\consultaVerifik\PasaDeTarifaSaldo.java
-E:\Cursos\compa\src\main\java\com\mercadopago\resources\payment\PaymentDiscount.java
-E:\Cursos\compa\src\main\java\com\mercadopago\client\cardtoken\CardTokenClient.java
-E:\Cursos\compa\src\main\java\com\mercadopago\serialization\Serializer.java
-E:\Cursos\compa\src\main\java\com\mercadopago\client\payment\PaymentPayerRequest.java
-E:\Cursos\compa\src\main\java\com\mercadopago\resources\payment\PaymentItem.java
-E:\Cursos\compa\src\main\java\com\mercadopago\client\merchantorder\MerchantOrderUpdateRequest.java
-E:\Cursos\compa\src\main\java\com\mercadopago\resources\preference\PreferencePaymentType.java
-E:\Cursos\compa\src\main\java\Unad\telecom_fase5\entity\consultaVerifik\VehicleInfoDTO.java
-E:\Cursos\compa\src\main\java\com\mercadopago\client\payment\PaymentReceiverAddressRequest.java
-E:\Cursos\compa\src\main\java\com\mercadopago\resources\preference\PreferencePassenger.java
-E:\Cursos\compa\src\main\java\com\mercadopago\client\preapproval\PreapprovalUpdateRequest.java
-E:\Cursos\compa\src\main\java\com\mercadopago\resources\payment\PaymentBankInfoCollector.java
-E:\Cursos\compa\src\main\java\com\mercadopago\resources\payment\PaymentOrder.java
-E:\Cursos\compa\src\main\java\com\mercadopago\resources\customer\CustomerCardSecurityCode.java
-E:\Cursos\compa\src\main\java\com\mercadopago\resources\payment\PaymentBankInfoPayer.java
-E:\Cursos\compa\src\main\java\com\mercadopago\client\point\PointDeviceOperatingModeRequest.java
-E:\Cursos\compa\src\main\java\com\mercadopago\client\payment\PaymentPointOfInteractionRequest.java
-E:\Cursos\compa\src\main\java\com\mercadopago\exceptions\MPJsonParseException.java
-E:\Cursos\compa\src\main\java\com\mercadopago\client\common\IdentificationRequest.java
-E:\Cursos\compa\src\main\java\Unad\telecom_fase5\dialect\SQLiteDialect.java
-E:\Cursos\compa\src\main\java\com\mercadopago\resources\merchantorder\MerchantOrderShippingSpeed.java
-E:\Cursos\compa\src\main\java\com\mercadopago\client\point\PointPaymentIntentPaymentRequest.java
-E:\Cursos\compa\src\main\java\com\mercadopago\client\preference\PreferencePassengerRequest.java
-E:\Cursos\compa\src\main\java\com\mercadopago\client\customer\CustomerClient.java
-E:\Cursos\compa\src\main\java\com\mercadopago\client\identificationtype\IdentificationTypeClient.java
-E:\Cursos\compa\src\main\java\com\mercadopago\client\point\PointPaymentIntentAdditionalInfoRequest.java
-E:\Cursos\compa\src\main\java\com\mercadopago\client\merchantorder\MerchantOrderItemRequest.java
-E:\Cursos\compa\src\main\java\com\mercadopago\client\payment\PaymentPayerAddressRequest.java
-E:\Cursos\compa\src\main\java\com\mercadopago\net\MPHttpClient.java
-E:\Cursos\compa\src\main\java\com\mercadopago\resources\preference\PreferenceSearch.java
-E:\Cursos\compa\src\main\java\Unad\telecom_fase5\entity\soat\Soat.java
-E:\Cursos\compa\src\main\java\com\mercadopago\resources\payment\PaymentPhone.java
-E:\Cursos\compa\src\main\java\com\mercadopago\resources\oauth\RefreshOauthCredential.java
-E:\Cursos\compa\src\main\java\com\mercadopago\resources\payment\PaymentCardholder.java
-E:\Cursos\compa\src\main\java\com\mercadopago\resources\customer\CustomerCardIssuer.java
-E:\Cursos\compa\src\main\java\com\mercadopago\net\MPRequest.java
-E:\Cursos\compa\src\main\java\com\mercadopago\resources\oauth\OauthCredential.java
-E:\Cursos\compa\src\main\java\com\mercadopago\client\MercadoPagoClient.java
-E:\Cursos\compa\src\main\java\com\mercadopago\resources\merchantorder\MerchantOrderPayer.java
+E:\Dev\GIT MERCADO\r5soat\src\main\java\com\mercadopago\net\MPResource.java
+E:\Dev\GIT MERCADO\r5soat\src\main\java\com\mercadopago\client\payment\PaymentRefundClient.java
+E:\Dev\GIT MERCADO\r5soat\src\main\java\com\mercadopago\client\preference\PreferenceReceiverAddressRequest.java
+E:\Dev\GIT MERCADO\r5soat\src\main\java\com\mercadopago\client\merchantorder\MerchantOrderReceiverAddressCityRequest.java
+E:\Dev\GIT MERCADO\r5soat\src\main\java\com\mercadopago\client\preapproval\PreapprovalClient.java
+E:\Dev\GIT MERCADO\r5soat\src\main\java\com\mercadopago\client\payment\PaymentOrderRequest.java
+E:\Dev\GIT MERCADO\r5soat\src\main\java\com\mercadopago\resources\preference\PreferenceRoute.java
+E:\Dev\GIT MERCADO\r5soat\src\main\java\com\mercadopago\resources\preference\PreferenceTax.java
+E:\Dev\GIT MERCADO\r5soat\src\main\java\com\mercadopago\client\point\PointClient.java
+E:\Dev\GIT MERCADO\r5soat\src\main\java\Unad\telecom_fase5\entity\consultaVerifik\UserEntity.java
+E:\Dev\GIT MERCADO\r5soat\src\main\java\com\mercadopago\client\preference\PreferencePayerRequest.java
+E:\Dev\GIT MERCADO\r5soat\src\main\java\com\mercadopago\client\paymentmethod\PaymentMethodClient.java
+E:\Dev\GIT MERCADO\r5soat\src\main\java\com\mercadopago\resources\customer\CustomerAddress.java
+E:\Dev\GIT MERCADO\r5soat\src\main\java\com\mercadopago\net\HttpStatus.java
+E:\Dev\GIT MERCADO\r5soat\src\main\java\com\mercadopago\client\payment\PaymentRulesRequest.java
+E:\Dev\GIT MERCADO\r5soat\src\main\java\com\mercadopago\client\preference\PreferenceShipmentsRequest.java
+E:\Dev\GIT MERCADO\r5soat\src\main\java\com\mercadopago\resources\payment\PaymentShipments.java
+E:\Dev\GIT MERCADO\r5soat\src\main\java\com\mercadopago\resources\preference\PreferenceSearch.java
+E:\Dev\GIT MERCADO\r5soat\src\main\java\com\mercadopago\client\merchantorder\MerchantOrderItemRequest.java
+E:\Dev\GIT MERCADO\r5soat\src\main\java\com\mercadopago\client\common\SubMerchant.java
+E:\Dev\GIT MERCADO\r5soat\src\main\java\com\mercadopago\MercadoPagoConfig.java
+E:\Dev\GIT MERCADO\r5soat\src\main\java\com\mercadopago\resources\paymentmethod\PaymentMethodSettingsCardNumber.java
+E:\Dev\GIT MERCADO\r5soat\src\main\java\com\mercadopago\resources\payment\PaymentTransactionData.java
+E:\Dev\GIT MERCADO\r5soat\src\main\java\com\mercadopago\core\MPRequestOptions.java
+E:\Dev\GIT MERCADO\r5soat\src\main\java\com\mercadopago\resources\common\Identification.java
+E:\Dev\GIT MERCADO\r5soat\src\main\java\com\mercadopago\client\payment\PaymentPassengerRequest.java
+E:\Dev\GIT MERCADO\r5soat\src\main\java\com\mercadopago\client\oauth\OauthClient.java
+E:\Dev\GIT MERCADO\r5soat\src\main\java\Unad\telecom_fase5\controller\pago\MediosDepagoController.java
+E:\Dev\GIT MERCADO\r5soat\src\main\java\com\mercadopago\resources\merchantorder\MerchantOrder.java
+E:\Dev\GIT MERCADO\r5soat\src\main\java\com\mercadopago\client\merchantorder\MerchantOrderCreateRequest.java
+E:\Dev\GIT MERCADO\r5soat\src\main\java\com\mercadopago\client\preference\PreferenceRequest.java
+E:\Dev\GIT MERCADO\r5soat\src\main\java\com\mercadopago\client\merchantorder\MerchantOrderPayerRequest.java
+E:\Dev\GIT MERCADO\r5soat\src\main\java\com\mercadopago\resources\customer\Identification.java
+E:\Dev\GIT MERCADO\r5soat\src\main\java\com\mercadopago\resources\customer\CustomerDefaultAddress.java
+E:\Dev\GIT MERCADO\r5soat\src\main\java\com\mercadopago\resources\payment\PaymentTransactionDetails.java
+E:\Dev\GIT MERCADO\r5soat\src\main\java\com\mercadopago\client\point\PointDeviceOperatingModeRequest.java
+E:\Dev\GIT MERCADO\r5soat\src\main\java\com\mercadopago\client\customer\CustomerCardCreateRequest.java
+E:\Dev\GIT MERCADO\r5soat\src\main\java\Unad\telecom_fase5\entity\consultaVerifik\VehicleInfoAuxDTO.java
+E:\Dev\GIT MERCADO\r5soat\src\main\java\com\mercadopago\resources\ResultsPaging.java
+E:\Dev\GIT MERCADO\r5soat\src\main\java\com\mercadopago\resources\customer\CustomerAddressCity.java
+E:\Dev\GIT MERCADO\r5soat\src\main\java\com\mercadopago\resources\point\OperatingMode.java
+E:\Dev\GIT MERCADO\r5soat\src\main\java\com\mercadopago\client\payment\PaymentSubscriptionSequenceRequest.java
+E:\Dev\GIT MERCADO\r5soat\src\main\java\com\mercadopago\client\point\PointPaymentIntentRequest.java
+E:\Dev\GIT MERCADO\r5soat\src\main\java\com\mercadopago\client\preference\PreferenceItemRequest.java
+E:\Dev\GIT MERCADO\r5soat\src\main\java\com\mercadopago\resources\payment\PaymentBankInfo.java
+E:\Dev\GIT MERCADO\r5soat\src\main\java\com\mercadopago\client\common\AddressRequest.java
+E:\Dev\GIT MERCADO\r5soat\src\main\java\Unad\telecom_fase5\servicios\consultaVerifik\PasaDeTarifaSaldo.java
+E:\Dev\GIT MERCADO\r5soat\src\main\java\com\mercadopago\client\user\UserClient.java
+E:\Dev\GIT MERCADO\r5soat\src\main\java\Unad\telecom_fase5\entity\soat\Vehiculo.java
+E:\Dev\GIT MERCADO\r5soat\src\main\java\com\mercadopago\resources\preference\PreferenceBackUrls.java
+E:\Dev\GIT MERCADO\r5soat\src\main\java\com\mercadopago\client\cardtoken\CardTokenRequest.java
+E:\Dev\GIT MERCADO\r5soat\src\main\java\com\mercadopago\resources\preference\Preference.java
+E:\Dev\GIT MERCADO\r5soat\src\main\java\com\mercadopago\resources\paymentmethod\PaymentMethod.java
+E:\Dev\GIT MERCADO\r5soat\src\main\java\com\mercadopago\client\preference\PreferenceTaxRequest.java
+E:\Dev\GIT MERCADO\r5soat\src\main\java\com\mercadopago\resources\merchantorder\MerchantOrderShipment.java
+E:\Dev\GIT MERCADO\r5soat\src\main\java\com\mercadopago\resources\point\PointPaymentIntentListEvent.java
+E:\Dev\GIT MERCADO\r5soat\src\main\java\com\mercadopago\client\payment\PaymentAdditionalInfoRequest.java
+E:\Dev\GIT MERCADO\r5soat\src\main\java\com\mercadopago\resources\customer\CustomerCardCardholder.java
+E:\Dev\GIT MERCADO\r5soat\src\main\java\com\mercadopago\client\preapproval\PreApprovalAutoRecurringUpdateRequest.java
+E:\Dev\GIT MERCADO\r5soat\src\main\java\com\mercadopago\resources\point\PointPaymentIntentAdditionalInfo.java
+E:\Dev\GIT MERCADO\r5soat\src\main\java\com\mercadopago\net\UrlFormatter.java
+E:\Dev\GIT MERCADO\r5soat\src\main\java\com\mercadopago\client\payment\PaymentRefundCreateRequest.java
+E:\Dev\GIT MERCADO\r5soat\src\main\java\com\mercadopago\resources\preference\PreferencePayer.java
+E:\Dev\GIT MERCADO\r5soat\src\main\java\com\mercadopago\resources\customer\CustomerAddressCountry.java
+E:\Dev\GIT MERCADO\r5soat\src\main\java\com\mercadopago\resources\point\PointPaymentIntent.java
+E:\Dev\GIT MERCADO\r5soat\src\main\java\com\mercadopago\client\preference\PreferenceDifferentialPricingRequest.java
+E:\Dev\GIT MERCADO\r5soat\src\main\java\com\mercadopago\resources\payment\Payment.java
+E:\Dev\GIT MERCADO\r5soat\src\main\java\com\mercadopago\resources\merchantorder\MerchantOrderShippingOption.java
+E:\Dev\GIT MERCADO\r5soat\src\main\java\com\mercadopago\resources\customer\CustomerAddressState.java
+E:\Dev\GIT MERCADO\r5soat\src\main\java\com\mercadopago\client\payment\PaymentForwardDataRequest.java
+E:\Dev\GIT MERCADO\r5soat\src\main\java\Unad\telecom_fase5\dialect\SQLiteDialect.java
+E:\Dev\GIT MERCADO\r5soat\src\main\java\com\mercadopago\client\point\OperatingMode.java
+E:\Dev\GIT MERCADO\r5soat\src\main\java\com\mercadopago\net\MPRequest.java
+E:\Dev\GIT MERCADO\r5soat\src\main\java\com\mercadopago\resources\payment\PaymentFeeDetail.java
+E:\Dev\GIT MERCADO\r5soat\src\main\java\com\mercadopago\exceptions\MPJsonParseException.java
+E:\Dev\GIT MERCADO\r5soat\src\main\java\com\mercadopago\resources\payment\PaymentTax.java
+E:\Dev\GIT MERCADO\r5soat\src\main\java\com\mercadopago\client\preference\PreferenceTrackRequest.java
+E:\Dev\GIT MERCADO\r5soat\src\main\java\com\mercadopago\resources\payment\PaymentPaymentReference.java
+E:\Dev\GIT MERCADO\r5soat\src\main\java\com\mercadopago\client\cardtoken\CardTokenClient.java
+E:\Dev\GIT MERCADO\r5soat\src\main\java\com\mercadopago\client\merchantorder\MerchantOrderShippingEstimatedDeliveryRequest.java
+E:\Dev\GIT MERCADO\r5soat\src\main\java\com\mercadopago\resources\preference\PreferencePassenger.java
+E:\Dev\GIT MERCADO\r5soat\src\main\java\com\mercadopago\client\payment\PaymentAdditionalInfoPayerRequest.java
+E:\Dev\GIT MERCADO\r5soat\src\main\java\Unad\telecom_fase5\entity\vehiculo\JacksonConfig.java
+E:\Dev\GIT MERCADO\r5soat\src\main\java\Unad\telecom_fase5\entity\soat\Soat.java
+E:\Dev\GIT MERCADO\r5soat\src\main\java\com\mercadopago\client\payment\PaymentDataRequest.java
+E:\Dev\GIT MERCADO\r5soat\src\main\java\com\mercadopago\client\payment\PaymentTransactionDataRequest.java
+E:\Dev\GIT MERCADO\r5soat\src\main\java\com\mercadopago\resources\preference\PreferenceCategoryDescriptor.java
+E:\Dev\GIT MERCADO\r5soat\src\main\java\com\mercadopago\client\payment\PaymentShipmentsRequest.java
+E:\Dev\GIT MERCADO\r5soat\src\main\java\com\mercadopago\resources\preference\PreferenceShipments.java
+E:\Dev\GIT MERCADO\r5soat\src\main\java\com\mercadopago\client\customer\CustomerAddressRequest.java
+E:\Dev\GIT MERCADO\r5soat\src\main\java\com\mercadopago\resources\customer\CustomerCardCardholderIdentification.java
+E:\Dev\GIT MERCADO\r5soat\src\main\java\Unad\telecom_fase5\entity\consultaVerifik\VehicleInfoDTO.java
+E:\Dev\GIT MERCADO\r5soat\src\main\java\com\mercadopago\resources\common\Address.java
+E:\Dev\GIT MERCADO\r5soat\src\main\java\com\mercadopago\resources\user\User.java
+E:\Dev\GIT MERCADO\r5soat\src\main\java\com\mercadopago\resources\payment\PaymentStatus.java
+E:\Dev\GIT MERCADO\r5soat\src\main\java\com\mercadopago\resources\customer\CustomerCardIssuer.java
+E:\Dev\GIT MERCADO\r5soat\src\main\java\com\mercadopago\resources\oauth\OauthCredential.java
+E:\Dev\GIT MERCADO\r5soat\src\main\java\com\mercadopago\client\payment\PaymentClient.java
+E:\Dev\GIT MERCADO\r5soat\src\main\java\com\mercadopago\net\MPResourceList.java
+E:\Dev\GIT MERCADO\r5soat\src\main\java\com\mercadopago\client\payment\PaymentFeeRequest.java
+E:\Dev\GIT MERCADO\r5soat\src\main\java\com\mercadopago\resources\preference\PreferencePaymentMethods.java
+E:\Dev\GIT MERCADO\r5soat\src\main\java\com\mercadopago\client\preference\PreferencePaymentTypeRequest.java
+E:\Dev\GIT MERCADO\r5soat\src\main\java\com\mercadopago\resources\preapproval\Preapproval.java
+E:\Dev\GIT MERCADO\r5soat\src\main\java\com\mercadopago\resources\payment\PaymentSubscriptionSequence.java
+E:\Dev\GIT MERCADO\r5soat\src\main\java\com\mercadopago\client\common\IdentificationRequest.java
+E:\Dev\GIT MERCADO\r5soat\src\main\java\com\mercadopago\resources\payment\PaymentCard.java
+E:\Dev\GIT MERCADO\r5soat\src\main\java\com\mercadopago\resources\customer\CustomerCard.java
+E:\Dev\GIT MERCADO\r5soat\src\main\java\com\mercadopago\client\payment\PaymentTaxRequest.java
+E:\Dev\GIT MERCADO\r5soat\src\main\java\com\mercadopago\client\preference\PreferenceRouteRequest.java
+E:\Dev\GIT MERCADO\r5soat\src\main\java\com\mercadopago\client\payment\PaymentPointOfInteractionRequest.java
+E:\Dev\GIT MERCADO\r5soat\src\main\java\com\mercadopago\client\preapproval\PreApprovalAutoRecurringCreateRequest.java
+E:\Dev\GIT MERCADO\r5soat\src\main\java\com\mercadopago\client\payment\PaymentPayerAddressRequest.java
+E:\Dev\GIT MERCADO\r5soat\src\main\java\Unad\telecom_fase5\TelecomFase5Application.java
+E:\Dev\GIT MERCADO\r5soat\src\main\java\com\mercadopago\client\merchantorder\MerchantOrderUpdateRequest.java
+E:\Dev\GIT MERCADO\r5soat\src\main\java\com\mercadopago\client\point\PointPaymentIntentPaymentRequest.java
+E:\Dev\GIT MERCADO\r5soat\src\main\java\com\mercadopago\net\MPSearchRequest.java
+E:\Dev\GIT MERCADO\r5soat\src\main\java\com\mercadopago\resources\preference\PreferenceItem.java
+E:\Dev\GIT MERCADO\r5soat\src\main\java\com\mercadopago\resources\preference\PreferenceDifferentialPricing.java
+E:\Dev\GIT MERCADO\r5soat\src\main\java\com\mercadopago\resources\preference\PreferenceTrack.java
+E:\Dev\GIT MERCADO\r5soat\src\main\java\Unad\telecom_fase5\controller\soat\GenerarSoatPdfController.java
+E:\Dev\GIT MERCADO\r5soat\src\main\java\com\mercadopago\client\preapproval\PreapprovalUpdateRequest.java
+E:\Dev\GIT MERCADO\r5soat\src\main\java\com\mercadopago\resources\payment\PaymentCardholder.java
+E:\Dev\GIT MERCADO\r5soat\src\main\java\com\mercadopago\resources\paymentmethod\PaymentMethodSettingsSecurityCode.java
+E:\Dev\GIT MERCADO\r5soat\src\main\java\com\mercadopago\client\preference\PreferencePaymentMethodRequest.java
+E:\Dev\GIT MERCADO\r5soat\src\main\java\com\mercadopago\resources\merchantorder\MerchantOrderReceiverAddressState.java
+E:\Dev\GIT MERCADO\r5soat\src\main\java\com\mercadopago\client\preference\PreferenceClient.java
+E:\Dev\GIT MERCADO\r5soat\src\main\java\com\mercadopago\client\customer\CustomerCardClient.java
+E:\Dev\GIT MERCADO\r5soat\src\main\java\com\mercadopago\net\MPResultsResourcesPage.java
+E:\Dev\GIT MERCADO\r5soat\src\main\java\com\mercadopago\resources\point\PointDeviceOperatingMode.java
+E:\Dev\GIT MERCADO\r5soat\src\main\java\com\mercadopago\client\point\PointPaymentIntentListRequest.java
+E:\Dev\GIT MERCADO\r5soat\src\main\java\com\mercadopago\resources\payment\PaymentDiscount.java
+E:\Dev\GIT MERCADO\r5soat\src\main\java\com\mercadopago\resources\identificationtype\IdentificationType.java
+E:\Dev\GIT MERCADO\r5soat\src\main\java\com\mercadopago\resources\merchantorder\MerchantOrderPayment.java
+E:\Dev\GIT MERCADO\r5soat\src\main\java\com\mercadopago\resources\payment\PaymentInvoicePeriod.java
+E:\Dev\GIT MERCADO\r5soat\src\main\java\com\mercadopago\client\payment\PaymentAuthenticationRequest.java
+E:\Dev\GIT MERCADO\r5soat\src\main\java\com\mercadopago\exceptions\MPApiException.java
+E:\Dev\GIT MERCADO\r5soat\src\main\java\com\mercadopago\exceptions\MPException.java
+E:\Dev\GIT MERCADO\r5soat\src\main\java\com\mercadopago\resources\customer\CustomerCardSecurityCode.java
+E:\Dev\GIT MERCADO\r5soat\src\main\java\com\mercadopago\resources\merchantorder\MerchantOrderCollector.java
+E:\Dev\GIT MERCADO\r5soat\src\main\java\com\mercadopago\resources\preference\PreferenceFreeMethod.java
+E:\Dev\GIT MERCADO\r5soat\src\main\java\com\mercadopago\resources\payment\PaymentPayer.java
+E:\Dev\GIT MERCADO\r5soat\src\main\java\com\mercadopago\serialization\Serializer.java
+E:\Dev\GIT MERCADO\r5soat\src\main\java\com\mercadopago\client\preference\PreferencePaymentMethodsRequest.java
+E:\Dev\GIT MERCADO\r5soat\src\main\java\Unad\telecom_fase5\controller\ConsultaVerifik\UserController.java
+E:\Dev\GIT MERCADO\r5soat\src\main\java\com\mercadopago\resources\CardToken.java
+E:\Dev\GIT MERCADO\r5soat\src\main\java\com\mercadopago\exceptions\MPMalformedRequestException.java
+E:\Dev\GIT MERCADO\r5soat\src\main\java\com\mercadopago\resources\payment\PaymentOrder.java
+E:\Dev\GIT MERCADO\r5soat\src\main\java\com\mercadopago\client\payment\PaymentMerchantServicesRequest.java
+E:\Dev\GIT MERCADO\r5soat\src\main\java\com\mercadopago\resources\point\PointPaymentIntentPayment.java
+E:\Dev\GIT MERCADO\r5soat\src\main\java\com\mercadopago\client\payment\PaymentMethodRequest.java
+E:\Dev\GIT MERCADO\r5soat\src\main\java\com\mercadopago\client\payment\PaymentDiscountRequest.java
+E:\Dev\GIT MERCADO\r5soat\src\main\java\com\mercadopago\resources\customer\CustomerAddressNeighborhood.java
+E:\Dev\GIT MERCADO\r5soat\src\main\java\com\mercadopago\resources\paymentmethod\PaymentMethodSettings.java
+E:\Dev\GIT MERCADO\r5soat\src\main\java\com\mercadopago\resources\merchantorder\MerchantOrderShippingSpeed.java
+E:\Dev\GIT MERCADO\r5soat\src\main\java\com\mercadopago\client\merchantorder\MerchantOrderReceiverAddressStateRequest.java
+E:\Dev\GIT MERCADO\r5soat\src\main\java\com\mercadopago\net\MPDefaultHttpClient.java
+E:\Dev\GIT MERCADO\r5soat\src\main\java\com\mercadopago\client\merchantorder\MerchantOrderClient.java
+E:\Dev\GIT MERCADO\r5soat\src\main\java\com\mercadopago\client\payment\PaymentItemRequest.java
+E:\Dev\GIT MERCADO\r5soat\src\main\java\com\mercadopago\resources\customer\CustomerCardPaymentMethod.java
+E:\Dev\GIT MERCADO\r5soat\src\main\java\Unad\telecom_fase5\servicios\consultaVerifik\VehicleService.java
+E:\Dev\GIT MERCADO\r5soat\src\main\java\com\mercadopago\resources\merchantorder\MerchantOrderShippingEstimatedDelivery.java
+E:\Dev\GIT MERCADO\r5soat\src\main\java\com\mercadopago\resources\payment\PaymentApplicationData.java
+E:\Dev\GIT MERCADO\r5soat\src\main\java\com\mercadopago\client\customer\CustomerRequest.java
+E:\Dev\GIT MERCADO\r5soat\src\main\java\com\mercadopago\client\payment\PaymentCancelRequest.java
+E:\Dev\GIT MERCADO\r5soat\src\main\java\com\mercadopago\resources\payment\PaymentAdditionalInfoPayer.java
+E:\Dev\GIT MERCADO\r5soat\src\main\java\com\mercadopago\resources\preference\PreferencePaymentMethod.java
+E:\Dev\GIT MERCADO\r5soat\src\main\java\com\mercadopago\resources\payment\PaymentFee.java
+E:\Dev\GIT MERCADO\r5soat\src\main\java\com\mercadopago\resources\point\PointCancelPaymentIntent.java
+E:\Dev\GIT MERCADO\r5soat\src\main\java\com\mercadopago\client\preference\PreferenceBackUrlsRequest.java
+E:\Dev\GIT MERCADO\r5soat\src\main\java\com\mercadopago\client\oauth\CreateOauthCredentialRequest.java
+E:\Dev\GIT MERCADO\r5soat\src\main\java\com\mercadopago\resources\payment\PaymentMethod.java
+E:\Dev\GIT MERCADO\r5soat\src\main\java\com\mercadopago\resources\oauth\CreateOauthCredential.java
+E:\Dev\GIT MERCADO\r5soat\src\main\java\com\mercadopago\client\payment\PaymentReceiverAddressRequest.java
+E:\Dev\GIT MERCADO\r5soat\src\main\java\com\mercadopago\net\Headers.java
+E:\Dev\GIT MERCADO\r5soat\src\main\java\com\mercadopago\resources\customer\CustomerAddressMunicipality.java
+E:\Dev\GIT MERCADO\r5soat\src\main\java\com\mercadopago\resources\payment\PaymentRefund.java
+E:\Dev\GIT MERCADO\r5soat\src\main\java\com\mercadopago\resources\payment\PaymentPointOfInteraction.java
+E:\Dev\GIT MERCADO\r5soat\src\main\java\com\mercadopago\resources\preference\PreferenceTrackValues.java
+E:\Dev\GIT MERCADO\r5soat\src\main\java\com\mercadopago\client\payment\PaymentInvoicePeriodRequest.java
+E:\Dev\GIT MERCADO\r5soat\src\main\java\com\mercadopago\client\payment\PaymentPaymentReferenceRequest.java
+E:\Dev\GIT MERCADO\r5soat\src\main\java\com\mercadopago\client\preference\PreferenceFreeMethodRequest.java
+E:\Dev\GIT MERCADO\r5soat\src\main\java\com\mercadopago\net\MPHttpClient.java
+E:\Dev\GIT MERCADO\r5soat\src\main\java\com\mercadopago\resources\payment\PaymentReceiverAddress.java
+E:\Dev\GIT MERCADO\r5soat\src\main\java\com\mercadopago\client\payment\PaymentCaptureRequest.java
+E:\Dev\GIT MERCADO\r5soat\src\main\java\com\mercadopago\net\MPElementsResourcesPage.java
+E:\Dev\GIT MERCADO\r5soat\src\main\java\com\mercadopago\resources\point\PointDevice.java
+E:\Dev\GIT MERCADO\r5soat\src\main\java\com\mercadopago\PSE.java
+E:\Dev\GIT MERCADO\r5soat\src\main\java\com\mercadopago\resources\point\PointDevices.java
+E:\Dev\GIT MERCADO\r5soat\src\main\java\com\mercadopago\resources\payment\PaymentRules.java
+E:\Dev\GIT MERCADO\r5soat\src\main\java\com\mercadopago\client\point\PointPaymentIntentAdditionalInfoRequest.java
+E:\Dev\GIT MERCADO\r5soat\src\main\java\com\mercadopago\resources\merchantorder\MerchantOrderItem.java
+E:\Dev\GIT MERCADO\r5soat\src\main\java\com\mercadopago\client\payment\PaymentPayerRequest.java
+E:\Dev\GIT MERCADO\r5soat\src\main\java\com\mercadopago\resources\payment\PaymentData.java
+E:\Dev\GIT MERCADO\r5soat\src\main\java\com\mercadopago\resources\payment\PaymentPhone.java
+E:\Dev\GIT MERCADO\r5soat\src\main\java\com\mercadopago\resources\paymentmethod\PaymentMethodSettingsBin.java
+E:\Dev\GIT MERCADO\r5soat\src\main\java\com\mercadopago\client\common\PhoneRequest.java
+E:\Dev\GIT MERCADO\r5soat\src\main\java\com\mercadopago\resources\preapproval\PreapprovalAutoRecurring.java
+E:\Dev\GIT MERCADO\r5soat\src\main\java\com\mercadopago\client\merchantorder\MerchantOrderShippingOptionRequest.java
+E:\Dev\GIT MERCADO\r5soat\src\main\java\com\mercadopago\client\MercadoPagoClient.java
+E:\Dev\GIT MERCADO\r5soat\src\main\java\com\mercadopago\resources\point\PointPaymentIntentList.java
+E:\Dev\GIT MERCADO\r5soat\src\main\java\Unad\telecom_fase5\entity\vehiculo\VehicleInfo.java
+E:\Dev\GIT MERCADO\r5soat\src\main\java\com\mercadopago\resources\point\PointSearchPaymentIntent.java
+E:\Dev\GIT MERCADO\r5soat\src\main\java\com\mercadopago\net\HttpMethod.java
+E:\Dev\GIT MERCADO\r5soat\src\main\java\com\mercadopago\client\payment\PaymentPayerPhoneRequest.java
+E:\Dev\GIT MERCADO\r5soat\src\main\java\com\mercadopago\client\preapproval\PreapprovalCreateRequest.java
+E:\Dev\GIT MERCADO\r5soat\src\main\java\com\mercadopago\client\merchantorder\MerchantOrderShipmentRequest.java
+E:\Dev\GIT MERCADO\r5soat\src\main\java\com\mercadopago\client\identificationtype\IdentificationTypeClient.java
+E:\Dev\GIT MERCADO\r5soat\src\main\java\com\mercadopago\resources\payment\PaymentAdditionalInfo.java
+E:\Dev\GIT MERCADO\r5soat\src\main\java\com\mercadopago\client\preference\PreferencePassengerRequest.java
+E:\Dev\GIT MERCADO\r5soat\src\main\java\com\mercadopago\resources\merchantorder\MerchantOrderReceiverAddressCity.java
+E:\Dev\GIT MERCADO\r5soat\src\main\java\com\mercadopago\resources\point\PointStatusPaymentIntent.java
+E:\Dev\GIT MERCADO\r5soat\src\main\java\com\mercadopago\resources\common\Phone.java
+E:\Dev\GIT MERCADO\r5soat\src\main\java\com\mercadopago\client\preference\PreferenceTrackValuesRequest.java
+E:\Dev\GIT MERCADO\r5soat\src\main\java\com\mercadopago\resources\payment\PaymentBarcode.java
+E:\Dev\GIT MERCADO\r5soat\src\main\java\com\mercadopago\client\payment\PaymentRouteRequest.java
+E:\Dev\GIT MERCADO\r5soat\src\main\java\com\mercadopago\resources\customer\Customer.java
+E:\Dev\GIT MERCADO\r5soat\src\main\java\com\mercadopago\resources\payment\PaymentBankInfoPayer.java
+E:\Dev\GIT MERCADO\r5soat\src\main\java\com\mercadopago\client\merchantorder\MerchantOrderReceiverAddressCountryRequest.java
+E:\Dev\GIT MERCADO\r5soat\src\main\java\Unad\telecom_fase5\entity\consultaVerifik\UserDTO.java
+E:\Dev\GIT MERCADO\r5soat\src\main\java\com\mercadopago\resources\preference\PreferencePaymentType.java
+E:\Dev\GIT MERCADO\r5soat\src\main\java\com\mercadopago\client\payment\PaymentCategoryDescriptorRequest.java
+E:\Dev\GIT MERCADO\r5soat\src\main\java\com\mercadopago\client\merchantorder\MerchantOrderReceiverAddressRequest.java
+E:\Dev\GIT MERCADO\r5soat\src\main\java\com\mercadopago\resources\oauth\RefreshOauthCredential.java
+E:\Dev\GIT MERCADO\r5soat\src\main\java\com\mercadopago\client\customer\CustomerClient.java
+E:\Dev\GIT MERCADO\r5soat\src\main\java\com\mercadopago\client\merchantorder\MerchantOrderShippingSpeedRequest.java
+E:\Dev\GIT MERCADO\r5soat\src\main\java\com\mercadopago\resources\merchantorder\MerchantOrderReceiverAddress.java
+E:\Dev\GIT MERCADO\r5soat\src\main\java\com\mercadopago\resources\merchantorder\MerchantOrderPayer.java
+E:\Dev\GIT MERCADO\r5soat\src\main\java\com\mercadopago\client\payment\PaymentTransactionDetailsRequest.java
+E:\Dev\GIT MERCADO\r5soat\src\main\java\com\mercadopago\resources\payment\PaymentItem.java
+E:\Dev\GIT MERCADO\r5soat\src\main\java\com\mercadopago\net\KeepAliveStrategy.java
+E:\Dev\GIT MERCADO\r5soat\src\main\java\com\mercadopago\resources\common\Source.java
+E:\Dev\GIT MERCADO\r5soat\src\main\java\com\mercadopago\resources\merchantorder\MerchantOrderReceiverAddressCountry.java
+E:\Dev\GIT MERCADO\r5soat\src\main\java\com\mercadopago\client\preference\PreferenceCategoryDescriptorRequest.java
+E:\Dev\GIT MERCADO\r5soat\src\main\java\Unad\telecom_fase5\entity\pago\PagoPseDTO.java
+E:\Dev\GIT MERCADO\r5soat\src\main\java\com\mercadopago\resources\payment\PaymentBankInfoCollector.java
+E:\Dev\GIT MERCADO\r5soat\src\main\java\com\mercadopago\TarjetaCreditDEbit.java
+E:\Dev\GIT MERCADO\r5soat\src\main\java\com\mercadopago\resources\paymentmethod\PaymentMethodFinancialInstitutions.java
+E:\Dev\GIT MERCADO\r5soat\src\main\java\com\mercadopago\resources\preference\PreferenceReceiverAddress.java
+E:\Dev\GIT MERCADO\r5soat\src\main\java\com\mercadopago\client\payment\PaymentCreateRequest.java
+E:\Dev\GIT MERCADO\r5soat\src\main\java\Unad\telecom_fase5\controller\pago\PagoPSEController.java
+E:\Dev\GIT MERCADO\r5soat\src\main\java\com\mercadopago\client\oauth\RefreshOauthCredentialRequest.java
+E:\Dev\GIT MERCADO\r5soat\src\main\java\com\mercadopago\resources\payment\PaymentThreeDSInfo.java
+E:\Dev\GIT MERCADO\r5soat\src\main\java\com\mercadopago\net\MPResponse.java
+E:\Dev\GIT MERCADO\r5soat\src\main\java\com\mercadopago\client\payment\PaymentAdditionalInfoBarcodeRequest.java
