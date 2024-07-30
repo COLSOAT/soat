@@ -9,9 +9,10 @@ function obtenerDatosDesdeLocalStorage() {
 
 async function enviarDatosAlBackend() {
     const datos = obtenerDatosDesdeLocalStorage();
+    console.log("Datos enviados:", datos); // Verifica los datos en la consola
 
     try {
-        const response = await fetch('/soat/documento', {
+        const response = await fetch('https://localhost:8080/soat/documento', { // URL completa
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
