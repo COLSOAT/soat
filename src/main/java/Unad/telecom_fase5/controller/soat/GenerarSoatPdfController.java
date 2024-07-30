@@ -35,8 +35,8 @@ public class GenerarSoatPdfController {
             userEntity.setDocumento(String.valueOf(vehicleInfoDTO.getDocumento()));
             userEntity.setFecha(fechaFormateada);
             userEntity.setInformacion("PASO 3:(SOAT) SE ENTREGO EL SOAT");
-            System.out.println(userEntity.toString());
-
+            System.out.println(userEntity.toString()+"- ENTIDADA");
+            System.out.println(vehicleInfoDTO.toString()+"- VEHICULO");
             Soat soat = new Soat(new VehicleInfoAuxDTO(vehicleInfoDTO));
             byte[] pdfReport = soat.generarSOAT();
 
