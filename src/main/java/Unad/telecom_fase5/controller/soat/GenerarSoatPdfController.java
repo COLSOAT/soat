@@ -40,9 +40,8 @@ public class GenerarSoatPdfController {
             Soat soat = new Soat(new VehicleInfoAuxDTO(vehicleInfoDTO));
             byte[] pdfReport = soat.generarSOAT();
 
-            if (pdfReport == null || pdfReport.length == 0) {
-                throw new RuntimeException("Error al generar el reporte PDF: el archivo PDF está vacío.");
-            }
+            System.out.println("Aqui esta todo bien 1 - "+pdfReport.length);
+            System.out.println("Aqui esta todo bien 2 - "+soat.getVehiculo().getCostototal());
 
             response.setContentType("application/pdf");
             response.setHeader("Content-Disposition", "inline; filename=\"reporte.pdf\"");
@@ -51,8 +50,8 @@ public class GenerarSoatPdfController {
             FileCopyUtils.copy(inStream, response.getOutputStream());
 
             userService.saveOrUpdateUser(userEntity);
-            System.out.println("Aqui esta todo bien 1 - "+pdfReport.length);
-            System.out.println("Aqui esta todo bien 2 - "+soat.getVehiculo().getCostototal());
+            System.out.println("Aqui esta todo bien 3 - "+pdfReport.length);
+            System.out.println("Aqui esta todo bien 4 - "+soat.getVehiculo().getCostototal());
         } catch (IOException e) {
             response.setStatus(HttpServletResponse.SC_INTERNAL_SERVER_ERROR);
             try {
