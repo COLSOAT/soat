@@ -77,8 +77,7 @@ public class Soat {
             parameters.put("runt", ((getVehiculo().getRunt())));
 
             System.out.println(getVehiculo().toString() + " AQUI TODO BIEN");
-            String path = "src/main/java/Unad/telecom_fase5/entity/soat/soatV2.jrxml";
-            FileInputStream inputStream = new FileInputStream(path);
+            InputStream inputStream = getClass().getClassLoader().getResourceAsStream("Unad/telecom_fase5/entity/soat/soatV2.jrxml");
             JasperReport jasperReport = JasperCompileManager.compileReport(inputStream);
 
 
