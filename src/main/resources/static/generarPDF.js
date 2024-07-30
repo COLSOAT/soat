@@ -12,7 +12,7 @@ async function enviarDatosAlBackend() {
     console.log("Datos enviados:", datos); // Verifica los datos en la consola
 
     try {
-        const response = await fetch('https://r5soat-faf3abc78f43.herokuapp.com/soat/documento', { // URL completa
+        const response = await fetch('https://localhost:8080/soat/documento', { // URL completa
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'

@@ -24,8 +24,8 @@ public class UserService {
     }
 
     // Eliminar un usuario por ID
-    public void deleteUserById(Long id) {
-        userRepository.deleteById(id);
+    public void deleteUserAll() {
+        userRepository.deleteAll();
     }
 
     // Obtener todos los usuarios

@@ -64,9 +64,26 @@ public class UserController {
 
     @GetMapping("/usuarios")
     public ResponseEntity<Iterable<UserEntity>> getAllUsers() {
-        Iterable iterable = userService.getAllUsers();
-        if (iterable != null) {
-            return ResponseEntity.ok(userService.getAllUsers());
+        try {
+            Iterable<UserEntity> users = userService.getAllUsers();
+            if (users != null) {
+                return ResponseEntity.ok(users);
+            } else {
+                return ResponseEntity.status(HttpStatus.NO_CONTENT).body(null); // No hay contenido
+            }
+        } catch (Exception e) {
+            e.printStackTrace(); // Registro adicional para depuración
+            return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).body(null); // Manejo de errores
+        }
+    }
+
+    @DeleteMapping("/usuarios")
+    public ResponseEntity<Iterable<UserEntity>> delete() {
+        try {
+           userService.deleteUserAll();
+        } catch (Exception e) {
+            e.printStackTrace(); // Registro adicional para depuración
+            return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).body(null); // Manejo de errores
         }
         return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).body(null); // Manejo de errores
     }
