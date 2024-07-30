@@ -8,9 +8,11 @@ import lombok.ToString;
 import net.sf.jasperreports.engine.*;
 import net.sf.jasperreports.engine.data.JRBeanCollectionDataSource;
 
+import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.InputStream;
+import java.net.URL;
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
 import java.util.*;
@@ -75,7 +77,21 @@ public class Soat {
             parameters.put("runt", ((getVehiculo().getRunt())));
 
             System.out.println(getVehiculo().toString() + " AQUI TODO BIEN");
+            URL resourceUrl = getClass().getClassLoader().getResource("soatV2.jrxml");
 
+            if (resourceUrl != null) {
+                // Convertir la URL en un archivo
+                File file = new File(resourceUrl.getFile());
+
+                // Verificar si el archivo existe
+                if (file.exists()) {
+                    System.out.println("El archivo existe: " + file.getAbsolutePath());
+                } else {
+                    System.out.println("El archivo no existe.");
+                }
+            } else {
+                System.out.println("Recurso no encontrado.");
+            }
             InputStream inputStream = getClass().getClassLoader().getResourceAsStream("soatV2.jrxml");
             JasperReport jasperReport = JasperCompileManager.compileReport(inputStream);
 
