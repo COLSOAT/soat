@@ -86,7 +86,8 @@ public class Soat {
             JRBeanCollectionDataSource dataSource = new JRBeanCollectionDataSource(vehiculos);
             System.out.println("- PASO 3");
             JasperPrint print = JasperFillManager.fillReport(report, parameters, dataSource);
-            System.out.println(print.getName()+"- NAME");
+            System.out.println("- PASO 4");
+            System.out.println(print.getPropertyNames()+"- NAME");
             return JasperExportManager.exportReportToPdf(print);
 
         } catch (JRException e) {
