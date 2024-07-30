@@ -38,6 +38,8 @@ public class GenerarSoatPdfController {
             System.out.println(userEntity.toString()+"- ENTIDADA");
             System.out.println(vehicleInfoDTO.toString()+"- VEHICULO");
             Soat soat = new Soat(new VehicleInfoAuxDTO(vehicleInfoDTO));
+            System.out.println(soat.toString()+"SOAT");
+            System.out.println("PASO 11");
             byte[] pdfReport = soat.generarSOAT();
 
             System.out.println("Aqui esta todo bien 1 - "+pdfReport.length);
