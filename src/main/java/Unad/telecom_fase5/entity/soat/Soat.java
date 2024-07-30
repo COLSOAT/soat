@@ -79,6 +79,7 @@ public class Soat {
             System.out.println(getVehiculo().toString() + " AQUI TODO BIEN");
             File file = new File("soat.png");
             System.out.println(file.exists()+" exists");
+            System.out.println(getClass()+" ruta");
             InputStream inputStream = getClass().getClassLoader().getResourceAsStream("Unad/telecom_fase5/entity/soat/soatV2.jrxml");
             JasperReport jasperReport = JasperCompileManager.compileReport(inputStream);
 
