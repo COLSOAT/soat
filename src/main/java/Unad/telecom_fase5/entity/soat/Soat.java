@@ -75,13 +75,15 @@ public class Soat {
             parameters.put("runt", ((getVehiculo().getRunt())));
 
             System.out.println(getVehiculo().toString()+" AQUI TODO BIEN");
-            InputStream is = new FileInputStream("src/main/resources/static/soatV2.jrxml");
+
+            InputStream is = getClass().getClassLoader().getResourceAsStream("static/soatV2.jrxml");
+            System.out.println("PASO");
             JasperReport report = JasperCompileManager.compileReport(is);
             JRBeanCollectionDataSource dataSource = new JRBeanCollectionDataSource(vehiculos);
             JasperPrint print = JasperFillManager.fillReport(report, parameters, dataSource);
             return JasperExportManager.exportReportToPdf(print);
 
-        } catch (JRException | FileNotFoundException e) {
+        } catch (JRException e) {
             throw new RuntimeException(e);
         }
     }
