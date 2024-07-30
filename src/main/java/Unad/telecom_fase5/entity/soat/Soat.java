@@ -76,21 +76,19 @@ public class Soat {
 
             System.out.println(getVehiculo().toString() + " AQUI TODO BIEN");
 
-            InputStream is = getClass().getClassLoader().getResourceAsStream("static/soatV2.jrxml");
-            if (is == null) {
-                System.out.println("NO ESTA AQUI LA RUTA");
-            }
+            InputStream inputStream = getClass().getClassLoader().getResourceAsStream("static/soatV2.jrxml");
+            JasperReport jasperReport = JasperCompileManager.compileReport(inputStream);
+
 
             System.out.println("DIFERENTE DE NULL");
             System.out.println("- PASO 1");
 
-            JasperReport report = JasperCompileManager.compileReport(is);
             System.out.println("- PASO 2");
 
             JRBeanCollectionDataSource dataSource = new JRBeanCollectionDataSource(vehiculos);
-            System.out.println(report.getName() + "- PASO 3");
+            System.out.println("- PASO 3");
 
-            JasperPrint print = JasperFillManager.fillReport(report, parameters, dataSource);
+            JasperPrint print = JasperFillManager.fillReport(jasperReport, parameters, dataSource);
             System.out.println("- PASO 4");
 
             System.out.println("Propiedades del JasperPrint:");
