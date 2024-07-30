@@ -30,7 +30,7 @@ public class PagoPSEController {
 
     @Autowired
     UserService userService;
-    @PostMapping("/pse")
+    @PostMapping("r5soat-faf3abc78f43.herokuapp.com/pse")
     public ResponseEntity<String> pagosPSE(@RequestBody PagoPseDTO pagoPseDTO) {
         try {
             LocalDate fechaActual = LocalDate.now();

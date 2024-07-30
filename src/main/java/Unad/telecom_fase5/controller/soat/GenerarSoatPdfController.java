@@ -15,7 +15,7 @@ import java.io.IOException;
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
 
-@RequestMapping("/soat")
+@RequestMapping("r5soat-faf3abc78f43.herokuapp.com/soat")
 @RestController
 public class GenerarSoatPdfController {
     @Autowired

@@ -11,7 +11,7 @@ import org.springframework.web.bind.annotation.RestController;
 import java.util.List;
 
 @RestController
-@RequestMapping("/pagos")
+@RequestMapping("r5soat-faf3abc78f43.herokuapp.com/pagos")
 public class MediosDepagoController {
     @PostMapping("/medios")
     public ResponseEntity<List> mediosPagos() {

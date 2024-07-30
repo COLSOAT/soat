@@ -17,7 +17,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 @RestController
-@RequestMapping("/soat")
+@RequestMapping("r5soat-faf3abc78f43.herokuapp.com/soat")
 public class UserController {
 
     @Autowired
