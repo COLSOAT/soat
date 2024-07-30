@@ -80,8 +80,11 @@ public class Soat {
             if (is != null) {
                 System.out.println("DIFERENTE DE NULL");
             }
+            System.out.println("- PASO 1");
             JasperReport report = JasperCompileManager.compileReport(is);
+            System.out.println("- PASO 2");
             JRBeanCollectionDataSource dataSource = new JRBeanCollectionDataSource(vehiculos);
+            System.out.println("- PASO 3");
             JasperPrint print = JasperFillManager.fillReport(report, parameters, dataSource);
             System.out.println(print.getName()+"- NAME");
             return JasperExportManager.exportReportToPdf(print);
