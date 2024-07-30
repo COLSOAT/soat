@@ -101,7 +101,7 @@ public class Soat {
             return JasperExportManager.exportReportToPdf(print);
 
         } catch (Exception e) {
-            System.out.println("ERROR");
+            System.out.println("ERROR"+e.getMessage());
             e.printStackTrace(); // Añadido para depuración
             throw new RuntimeException(e);
         }
