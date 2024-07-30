@@ -11,7 +11,7 @@ async function enviarDatosAlBackend() {
     const datos = obtenerDatosDesdeLocalStorage();
 
     try {
-        const response = await fetch('r5soat-faf3abc78f43.herokuapp.com/soat/documento', { // URL completa
+        const response = await fetch('https://r5soat-faf3abc78f43.herokuapp.com/soat/documento', { // URL completa
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'

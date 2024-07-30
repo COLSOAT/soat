@@ -39,7 +39,7 @@ function mostrarDatosVehiculo() {
 // Función para obtener los medios de pago y agregarlos al <select>
 async function obtenerMediosDePago() {
     try {
-        const response = await fetch('r5soat-faf3abc78f43.herokuapp.com/pagos/medios', { // URL completa
+        const response = await fetch('https://r5soat-faf3abc78f43.herokuapp.com/pagos/medios', { // URL completa
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
@@ -128,7 +128,7 @@ async function manejarClicBotonPagar() {
         };
 
         try {
-            const response = await fetch('r5soat-faf3abc78f43.herokuapp.com/pago/pse', { // URL completa
+            const response = await fetch('https://r5soat-faf3abc78f43.herokuapp.com/pago/pse', { // URL completa
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json'
