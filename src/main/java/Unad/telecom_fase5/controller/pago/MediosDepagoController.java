@@ -9,10 +9,10 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 import java.util.List;
-
 @RestController
-@RequestMapping("r5soat-faf3abc78f43.herokuapp.com/pagos")
+@RequestMapping("/pagos") // Ruta base
 public class MediosDepagoController {
+
     @PostMapping("/medios")
     public ResponseEntity<List> mediosPagos() {
         List listMedios = null;

@@ -21,16 +21,16 @@ import Unad.telecom_fase5.entity.pago.PagoPseDTO;
 import java.math.BigDecimal;
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
-
 @RestController
-@RequestMapping("/pago")
+@RequestMapping("/pago") // Ruta base
 public class PagoPSEController {
 
     private final ObjectMapper objectMapper = new ObjectMapper(); // Para convertir a JSON
 
     @Autowired
     UserService userService;
-    @PostMapping("r5soat-faf3abc78f43.herokuapp.com/pse")
+
+    @PostMapping("/pse")
     public ResponseEntity<String> pagosPSE(@RequestBody PagoPseDTO pagoPseDTO) {
         try {
             LocalDate fechaActual = LocalDate.now();

@@ -14,14 +14,14 @@ import java.io.ByteArrayInputStream;
 import java.io.IOException;
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
-
-@RequestMapping("r5soat-faf3abc78f43.herokuapp.com/soat")
 @RestController
+@RequestMapping("/soat") // Ruta base
 public class GenerarSoatPdfController {
+
     @Autowired
     UserService userService;
 
-    @PostMapping(value = "/documento")
+    @PostMapping("/documento")
     public void documento(HttpServletResponse response, @RequestBody VehicleInfoDTO vehicleInfoDTO) {
         LocalDate fechaActual = LocalDate.now();
         DateTimeFormatter formato = DateTimeFormatter.ofPattern("dd/MM/yyyy");

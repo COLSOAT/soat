@@ -10,7 +10,7 @@ function enviarDatos() {
     };
 
     // Realizar la solicitud al backend
-    fetch('/soat/consultar', {
+    fetch('r5soat-faf3abc78f43.herokuapp.com/soat/consultar', { // URL completa
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'
