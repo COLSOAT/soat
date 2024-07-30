@@ -14,6 +14,7 @@ import java.io.ByteArrayInputStream;
 import java.io.IOException;
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
+
 @RestController
 @RequestMapping("/soat") // Ruta base
 public class GenerarSoatPdfController {
@@ -31,19 +32,36 @@ public class GenerarSoatPdfController {
         userEntity.setFecha(fechaFormateada);
         userEntity.setInformacion("PASO 3:(SOAT) SE ENTREGO EL SOAT");
 
-        Soat soat = new Soat(new VehicleInfoAuxDTO(vehicleInfoDTO));
-        byte[] pdfReport = soat.generarSOAT();
-        response.setContentType("application/pdf");
-        // Cambia la disposición del contenido para que se abra en una nueva pestaña
-        response.setHeader("Content-Disposition", "inline; filename=\"reporte.pdf\"");
-        response.setContentLength(pdfReport.length);
-        ByteArrayInputStream inStream = new ByteArrayInputStream(pdfReport);
-
         try {
+            Soat soat = new Soat(new VehicleInfoAuxDTO(vehicleInfoDTO));
+            byte[] pdfReport = soat.generarSOAT();
+
+            if (pdfReport == null || pdfReport.length == 0) {
+                throw new RuntimeException("Error al generar el reporte PDF: el archivo PDF está vacío.");
+            }
+
+            response.setContentType("application/pdf");
+            response.setHeader("Content-Disposition", "inline; filename=\"reporte.pdf\"");
+            response.setContentLength(pdfReport.length);
+            ByteArrayInputStream inStream = new ByteArrayInputStream(pdfReport);
             FileCopyUtils.copy(inStream, response.getOutputStream());
+
             userService.saveOrUpdateUser(userEntity);
+
         } catch (IOException e) {
-            throw new RuntimeException(e);
+            response.setStatus(HttpServletResponse.SC_INTERNAL_SERVER_ERROR);
+            try {
+                response.getWriter().write("Error al procesar la solicitud: " + e.getMessage());
+            } catch (IOException ex) {
+                ex.printStackTrace();
+            }
+        } catch (Exception e) {
+            response.setStatus(HttpServletResponse.SC_INTERNAL_SERVER_ERROR);
+            try {
+                response.getWriter().write("Error inesperado: " + e.getMessage());
+            } catch (IOException ex) {
+                ex.printStackTrace();
+            }
         }
     }
 }

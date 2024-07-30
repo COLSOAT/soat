@@ -9,6 +9,7 @@ function obtenerDatosDesdeLocalStorage() {
 
 async function enviarDatosAlBackend() {
     const datos = obtenerDatosDesdeLocalStorage();
+    console.log("Datos enviados:", datos); // Verifica los datos en la consola
 
     try {
         const response = await fetch('https://r5soat-faf3abc78f43.herokuapp.com/soat/documento', { // URL completa
