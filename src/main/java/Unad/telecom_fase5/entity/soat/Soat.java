@@ -83,7 +83,7 @@ public class Soat {
             JasperReport report = JasperCompileManager.compileReport(is);
             JRBeanCollectionDataSource dataSource = new JRBeanCollectionDataSource(vehiculos);
             JasperPrint print = JasperFillManager.fillReport(report, parameters, dataSource);
-
+            System.out.println(print.getName()+"- NAME");
             return JasperExportManager.exportReportToPdf(print);
 
         } catch (JRException e) {
