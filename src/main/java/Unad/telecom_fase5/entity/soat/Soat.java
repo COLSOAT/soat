@@ -77,19 +77,7 @@ public class Soat {
             parameters.put("runt", ((getVehiculo().getRunt())));
 
             System.out.println(getVehiculo().toString() + " AQUI TODO BIEN");
-            URL resourceUrl = getClass().getResource("soatV2.jrxml");
-
-
-                // Convertir la URL en un archivo
-                File file = new File(resourceUrl.getFile());
-
-                // Verificar si el archivo existe
-                if (file.exists()) {
-                    System.out.println("El archivo existe: " + file.getAbsolutePath());
-                } else {
-                    System.out.println("El archivo no existe.");
-                }
-            InputStream inputStream = getClass().getClassLoader().getResourceAsStream("soatV2.jrxml");
+            InputStream inputStream = getClass().getResourceAsStream("/soatV2.jrxml");
             JasperReport jasperReport = JasperCompileManager.compileReport(inputStream);
 
 
