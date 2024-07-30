@@ -61,7 +61,7 @@
 					<property name="com.jaspersoft.studio.unit.x" value="px"/>
 					<property name="com.jaspersoft.studio.unit.y" value="px"/>
 				</reportElement>
-				<imageExpression><![CDATA["E:/Cursos/compa/src/main/resources/static/soat.png"]]></imageExpression>
+				<imageExpression><![CDATA["/soat.png"]]></imageExpression>
 			</image>
 			<textField>
 				<reportElement x="10" y="211" width="70" height="20" uuid="9b48c8ec-324f-4a57-adc2-97ae3757166b"/>
