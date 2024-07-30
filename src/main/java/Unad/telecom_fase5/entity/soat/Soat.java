@@ -90,7 +90,7 @@ public class Soat {
             System.out.println(print.getPropertyNames()+"- NAME");
             return JasperExportManager.exportReportToPdf(print);
 
-        } catch (JRException e) {
+        } catch (Exception e) {
             System.out.println("ERROR");
             throw new RuntimeException(e);
         }
