@@ -204,6 +204,7 @@ com\mercadopago\client\preference\PreferenceShipmentsRequest$PreferenceShipments
 com\mercadopago\resources\merchantorder\MerchantOrderPayer.class
 com\mercadopago\client\preapproval\PreapprovalClient$1.class
 com\mercadopago\client\common\AddressRequest$1.class
+Unad\telecom_fase5\servicios\user\UserService.class
 Unad\telecom_fase5\TelecomFase5Application.class
 com\mercadopago\resources\merchantorder\MerchantOrderReceiverAddressCity.class
 com\mercadopago\resources\point\PointDevice.class
@@ -277,6 +278,7 @@ com\mercadopago\client\preference\PreferenceReceiverAddressRequest$PreferenceRec
 com\mercadopago\resources\point\PointPaymentIntent.class
 com\mercadopago\exceptions\MPMalformedRequestException.class
 com\mercadopago\resources\customer\CustomerAddressCity.class
+Unad\telecom_fase5\repository\UserRepository.class
 com\mercadopago\resources\payment\PaymentTax.class
 com\mercadopago\resources\preference\PreferenceBackUrls.class
 Unad\telecom_fase5\entity\pago\PagoPseDTO.class

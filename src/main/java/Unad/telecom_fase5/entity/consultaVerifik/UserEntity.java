@@ -15,9 +15,12 @@ public class UserEntity {
     @Column(name = "id")
     private Long id;
 
-    @Column(name = "email")
-    private String email;
+    @Column(name = "fecha")
+    private String fecha;
 
-    @Column(name = "telefono")
-    private Long telefono;
+    @Column(name = "documento")
+    private String documento;
+
+    @Column(name = "informacion")
+    private String informacion;
 }

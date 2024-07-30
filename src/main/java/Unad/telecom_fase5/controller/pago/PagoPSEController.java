@@ -1,11 +1,14 @@
 package Unad.telecom_fase5.controller.pago;
 
+import Unad.telecom_fase5.entity.consultaVerifik.UserEntity;
+import Unad.telecom_fase5.servicios.user.UserService;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.mercadopago.MercadoPagoConfig;
 import com.mercadopago.client.payment.*;
 import com.mercadopago.client.common.IdentificationRequest;
 import com.mercadopago.resources.payment.Payment;
 import com.mercadopago.exceptions.MPApiException;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
@@ -16,6 +19,8 @@ import org.springframework.web.bind.annotation.RestController;
 import Unad.telecom_fase5.entity.pago.PagoPseDTO;
 
 import java.math.BigDecimal;
+import java.time.LocalDate;
+import java.time.format.DateTimeFormatter;
 
 @RestController
 @RequestMapping("/pago")
@@ -23,9 +28,19 @@ public class PagoPSEController {
 
     private final ObjectMapper objectMapper = new ObjectMapper(); // Para convertir a JSON
 
+    @Autowired
+    UserService userService;
     @PostMapping("/pse")
     public ResponseEntity<String> pagosPSE(@RequestBody PagoPseDTO pagoPseDTO) {
         try {
+            LocalDate fechaActual = LocalDate.now();
+            DateTimeFormatter formato = DateTimeFormatter.ofPattern("dd/MM/yyyy");
+            String fechaFormateada = fechaActual.format(formato);
+            UserEntity userEntity= new UserEntity();
+            userEntity.setDocumento(pagoPseDTO.getDocumento());
+            userEntity.setFecha(fechaFormateada);
+            userEntity.setInformacion("PASO 2: (PAGO), SE MOSTRARON DATOS DEL VEHICULO PARA EL PAGO");
+
             MercadoPagoConfig.setAccessToken("APP_USR-2625059277787645-041123-ea665332ba486bda3a192d3455a33696-1188679528");
             PaymentClient client = new PaymentClient();
 
@@ -79,7 +94,7 @@ public class PagoPSEController {
 
             // Convertir el objeto Payment a JSON
             String paymentJson = objectMapper.writeValueAsString(payment);
-
+            userService.saveOrUpdateUser(userEntity);
             return ResponseEntity.ok()
                     .contentType(MediaType.APPLICATION_JSON)
                     .body(paymentJson);
