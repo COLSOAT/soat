@@ -77,7 +77,7 @@ public class Soat {
             parameters.put("runt", ((getVehiculo().getRunt())));
 
             System.out.println(getVehiculo().toString() + " AQUI TODO BIEN");
-            URL resourceUrl = getClass().getClassLoader().getResource("soatV2.jrxml");
+            URL resourceUrl = getClass().getResource("soatV2.jrxml");
 
 
                 // Convertir la URL en un archivo
