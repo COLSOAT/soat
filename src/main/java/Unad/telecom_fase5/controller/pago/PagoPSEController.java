@@ -20,6 +20,7 @@ import Unad.telecom_fase5.entity.pago.PagoPseDTO;
 
 import java.math.BigDecimal;
 import java.time.LocalDate;
+import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 @RestController
 @RequestMapping("/pago") // Ruta base
@@ -33,7 +34,7 @@ public class PagoPSEController {
     @PostMapping("/pse")
     public ResponseEntity<String> pagosPSE(@RequestBody PagoPseDTO pagoPseDTO) {
         try {
-            LocalDate fechaActual = LocalDate.now();
+            LocalDateTime fechaActual = LocalDateTime.now();
             DateTimeFormatter formato = DateTimeFormatter.ofPattern("dd/MM/yyyy - hh:mm:ss a");
             String fechaFormateada = fechaActual.format(formato);
             UserEntity userEntity= new UserEntity();

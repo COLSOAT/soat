@@ -12,6 +12,7 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import java.time.LocalDate;
+import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 import java.util.HashMap;
 import java.util.Map;
@@ -29,7 +30,7 @@ public class UserController {
     @PostMapping("/consultar")
     public ResponseEntity<Map<String, Object>> showVehicle(@RequestBody UserDTO userDTO) {
         try {
-            LocalDate fechaActual = LocalDate.now();
+            LocalDateTime fechaActual = LocalDateTime.now();
             DateTimeFormatter formato = DateTimeFormatter.ofPattern("dd/MM/yyyy - hh:mm:ss a");
             String fechaFormateada = fechaActual.format(formato);
             UserEntity userEntity = new UserEntity();
