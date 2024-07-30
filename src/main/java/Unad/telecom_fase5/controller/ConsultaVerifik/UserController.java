@@ -15,6 +15,7 @@ import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
 import java.util.HashMap;
 import java.util.Map;
+
 @RestController
 @RequestMapping("/soat") // Ruta base
 public class UserController {
@@ -31,7 +32,7 @@ public class UserController {
             LocalDate fechaActual = LocalDate.now();
             DateTimeFormatter formato = DateTimeFormatter.ofPattern("dd/MM/yyyy");
             String fechaFormateada = fechaActual.format(formato);
-            UserEntity userEntity= new UserEntity();
+            UserEntity userEntity = new UserEntity();
             userEntity.setDocumento(userDTO.getDocumento());
             userEntity.setFecha(fechaFormateada);
             userEntity.setInformacion("PASO 1: (DATOS VEHICULO) INGRESO EL DOCUMENTO Y PLACA");
@@ -63,7 +64,11 @@ public class UserController {
 
     @GetMapping("/usuarios")
     public ResponseEntity<Iterable<UserEntity>> getAllUsers() {
-        return ResponseEntity.ok(userService.getAllUsers());
+        Iterable iterable = userService.getAllUsers();
+        if (iterable != null) {
+            return ResponseEntity.ok(userService.getAllUsers());
+        }
+        return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).body(null); // Manejo de errores
     }
 
 

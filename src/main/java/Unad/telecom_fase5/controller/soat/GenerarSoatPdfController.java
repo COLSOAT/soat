@@ -24,15 +24,17 @@ public class GenerarSoatPdfController {
 
     @PostMapping("/documento")
     public void documento(HttpServletResponse response, @RequestBody VehicleInfoDTO vehicleInfoDTO) {
-        LocalDate fechaActual = LocalDate.now();
-        DateTimeFormatter formato = DateTimeFormatter.ofPattern("dd/MM/yyyy");
-        String fechaFormateada = fechaActual.format(formato);
-        UserEntity userEntity = new UserEntity();
-        userEntity.setDocumento(String.valueOf(vehicleInfoDTO.getDocumento()));
-        userEntity.setFecha(fechaFormateada);
-        userEntity.setInformacion("PASO 3:(SOAT) SE ENTREGO EL SOAT");
+
 
         try {
+            LocalDate fechaActual = LocalDate.now();
+            DateTimeFormatter formato = DateTimeFormatter.ofPattern("dd/MM/yyyy");
+            String fechaFormateada = fechaActual.format(formato);
+            UserEntity userEntity = new UserEntity();
+            userEntity.setDocumento(String.valueOf(vehicleInfoDTO.getDocumento()));
+            userEntity.setFecha(fechaFormateada);
+            userEntity.setInformacion("PASO 3:(SOAT) SE ENTREGO EL SOAT");
+
             Soat soat = new Soat(new VehicleInfoAuxDTO(vehicleInfoDTO));
             byte[] pdfReport = soat.generarSOAT();
 
