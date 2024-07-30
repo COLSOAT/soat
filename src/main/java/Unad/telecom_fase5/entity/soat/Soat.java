@@ -79,7 +79,7 @@ public class Soat {
             System.out.println(getVehiculo().toString() + " AQUI TODO BIEN");
             URL resourceUrl = getClass().getClassLoader().getResource("soatV2.jrxml");
 
-            if (resourceUrl != null) {
+
                 // Convertir la URL en un archivo
                 File file = new File(resourceUrl.getFile());
 
@@ -89,9 +89,6 @@ public class Soat {
                 } else {
                     System.out.println("El archivo no existe.");
                 }
-            } else {
-                System.out.println("Recurso no encontrado.");
-            }
             InputStream inputStream = getClass().getClassLoader().getResourceAsStream("soatV2.jrxml");
             JasperReport jasperReport = JasperCompileManager.compileReport(inputStream);
 
