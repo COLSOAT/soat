@@ -8,10 +8,7 @@ import lombok.ToString;
 import net.sf.jasperreports.engine.*;
 import net.sf.jasperreports.engine.data.JRBeanCollectionDataSource;
 
-import java.io.File;
-import java.io.FileInputStream;
-import java.io.FileNotFoundException;
-import java.io.InputStream;
+import java.io.*;
 import java.net.URL;
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
@@ -77,21 +74,32 @@ public class Soat {
             parameters.put("runt", ((getVehiculo().getRunt())));
 
             System.out.println(getVehiculo().toString() + " AQUI TODO BIEN");
-            InputStream inputStream = getClass().getClassLoader().getResourceAsStream("/soatV2.jrxml");
-
-            if (inputStream != null) {
-                try {
-                    // Compila el reporte Jasper
-                    JasperReport jasperReport = JasperCompileManager.compileReport(inputStream);
-                    System.out.println("Reporte compilado exitosamente.");
-                } catch (JRException e) {
-                    e.printStackTrace();
-                    System.out.println("No se pudo encontrar el recurso.");
+            InputStream inputStream = null;
+            JasperReport jasperReport = null;
+            try {
+                // Obtener el InputStream del recurso
+                inputStream = getClass().getClassLoader().getResourceAsStream("/soatV2.jrxml");
+                if (inputStream == null) {
+                    throw new RuntimeException("No se pudo encontrar el archivo soatV2.jrxml.");
                 }
-            } else {
-                System.out.println("No se pudo encontrar el recurso.");
+
+                // Compilar el reporte Jasper
+                jasperReport = JasperCompileManager.compileReport(inputStream);
+            } catch (JRException e) {
+                e.printStackTrace();
+            } finally {
+                // Asegurarse de cerrar el flujo en el bloque finally
+                if (inputStream != null) {
+                    try {
+                        inputStream.close();
+                    } catch (IOException e) {
+                        e.printStackTrace();
+                    }
+                }
             }
-            JasperReport jasperReport = JasperCompileManager.compileReport(inputStream);
+
+
+            jasperReport = JasperCompileManager.compileReport(inputStream);
 
 
             System.out.println("DIFERENTE DE NULL");
@@ -113,7 +121,7 @@ public class Soat {
             return JasperExportManager.exportReportToPdf(print);
 
         } catch (Exception e) {
-            System.out.println("ERROR"+e.getMessage());
+            System.out.println("ERROR" + e.getMessage());
             e.printStackTrace(); // Añadido para depuración
             throw new RuntimeException(e);
         }
