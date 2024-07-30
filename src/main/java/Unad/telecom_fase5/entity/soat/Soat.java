@@ -77,7 +77,7 @@ public class Soat {
             parameters.put("runt", ((getVehiculo().getRunt())));
 
             System.out.println(getVehiculo().toString() + " AQUI TODO BIEN");
-            InputStream inputStream = getClass().getClassLoader().getResourceAsStream("Unad/telecom_fase5/entity/soat/soatV2.jrxml");
+            InputStream inputStream = getClass().getClassLoader().getResourceAsStream("/soatV2.jrxml");
 
             if (inputStream != null) {
                 try {
