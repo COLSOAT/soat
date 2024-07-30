@@ -34,6 +34,7 @@ public class GenerarSoatPdfController {
             userEntity.setDocumento(String.valueOf(vehicleInfoDTO.getDocumento()));
             userEntity.setFecha(fechaFormateada);
             userEntity.setInformacion("PASO 3:(SOAT) SE ENTREGO EL SOAT");
+            System.out.println(userEntity.toString());
 
             Soat soat = new Soat(new VehicleInfoAuxDTO(vehicleInfoDTO));
             byte[] pdfReport = soat.generarSOAT();
@@ -49,15 +50,18 @@ public class GenerarSoatPdfController {
             FileCopyUtils.copy(inStream, response.getOutputStream());
 
             userService.saveOrUpdateUser(userEntity);
-
+            System.out.println(soat.toString());
         } catch (IOException e) {
             response.setStatus(HttpServletResponse.SC_INTERNAL_SERVER_ERROR);
             try {
                 response.getWriter().write("Error al procesar la solicitud: " + e.getMessage());
+                System.out.println(e.getMessage());
             } catch (IOException ex) {
+                System.out.println(ex.getMessage());
                 ex.printStackTrace();
             }
         } catch (Exception e) {
+            System.out.println(e.getMessage());
             response.setStatus(HttpServletResponse.SC_INTERNAL_SERVER_ERROR);
             try {
                 response.getWriter().write("Error inesperado: " + e.getMessage());

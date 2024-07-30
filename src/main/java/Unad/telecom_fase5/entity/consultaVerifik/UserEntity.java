@@ -2,12 +2,14 @@ package Unad.telecom_fase5.entity.consultaVerifik;
 
 import lombok.Getter;
 import lombok.Setter;
+import lombok.ToString;
 
 import javax.persistence.*;
 
 @Entity
 @Getter
 @Setter
+@ToString
 @Table(name = "user")
 public class UserEntity {
     @Id

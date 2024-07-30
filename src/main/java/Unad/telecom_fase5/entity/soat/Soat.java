@@ -4,6 +4,7 @@ import Unad.telecom_fase5.entity.consultaVerifik.VehicleInfoAuxDTO;
 import Unad.telecom_fase5.entity.consultaVerifik.VehicleInfoDTO;
 import lombok.Getter;
 import lombok.Setter;
+import lombok.ToString;
 import net.sf.jasperreports.engine.*;
 import net.sf.jasperreports.engine.data.JRBeanCollectionDataSource;
 
@@ -14,7 +15,7 @@ import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
 import java.util.*;
 
-
+@ToString
 public class Soat {
     @Getter
     @Setter
