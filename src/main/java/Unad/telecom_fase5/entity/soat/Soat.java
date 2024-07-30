@@ -74,7 +74,7 @@ public class Soat {
             parameters.put("contribucion", ((getVehiculo().getContribucion())));
             parameters.put("runt", ((getVehiculo().getRunt())));
 
-
+            System.out.println(getVehiculo().toString()+" AQUI TODO BIEN");
             InputStream is = new FileInputStream("src/main/resources/static/soatV2.jrxml");
             JasperReport report = JasperCompileManager.compileReport(is);
             JRBeanCollectionDataSource dataSource = new JRBeanCollectionDataSource(vehiculos);
