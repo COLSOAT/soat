@@ -34,7 +34,7 @@ public class PagoPSEController {
     public ResponseEntity<String> pagosPSE(@RequestBody PagoPseDTO pagoPseDTO) {
         try {
             LocalDate fechaActual = LocalDate.now();
-            DateTimeFormatter formato = DateTimeFormatter.ofPattern("dd/MM/yyyy");
+            DateTimeFormatter formato = DateTimeFormatter.ofPattern("dd/MM/yyyy - hh:mm:ss a");
             String fechaFormateada = fechaActual.format(formato);
             UserEntity userEntity= new UserEntity();
             userEntity.setDocumento(pagoPseDTO.getDocumento());

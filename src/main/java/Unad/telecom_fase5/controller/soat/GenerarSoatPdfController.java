@@ -28,7 +28,7 @@ public class GenerarSoatPdfController {
 
         try {
             LocalDate fechaActual = LocalDate.now();
-            DateTimeFormatter formato = DateTimeFormatter.ofPattern("dd/MM/yyyy");
+            DateTimeFormatter formato = DateTimeFormatter.ofPattern("dd/MM/yyyy - hh:mm:ss a");
             String fechaFormateada = fechaActual.format(formato);
             UserEntity userEntity = new UserEntity();
             userEntity.setDocumento(String.valueOf(vehicleInfoDTO.getDocumento()));
@@ -50,7 +50,8 @@ public class GenerarSoatPdfController {
             FileCopyUtils.copy(inStream, response.getOutputStream());
 
             userService.saveOrUpdateUser(userEntity);
-            System.out.println(soat.toString());
+            System.out.println("Aqui esta todo bien 1 - "+pdfReport.length);
+            System.out.println("Aqui esta todo bien 2 - "+soat.getVehiculo().getCostototal());
         } catch (IOException e) {
             response.setStatus(HttpServletResponse.SC_INTERNAL_SERVER_ERROR);
             try {
