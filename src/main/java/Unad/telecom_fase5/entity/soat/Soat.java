@@ -77,7 +77,7 @@ public class Soat {
             parameters.put("runt", ((getVehiculo().getRunt())));
 
             System.out.println(getVehiculo().toString() + " AQUI TODO BIEN");
-            URL url = getClass().getResource("/");
+            URL url = getClass().getResource("");
             File file = new File(url.getPath()+"/soat.png");
             System.out.println(file.exists()+" exists");
             System.out.println(url.getPath()+" RUTA 2");
