@@ -42,9 +42,8 @@ public class Soat {
             DateTimeFormatter formatterMonth = DateTimeFormatter.ofPattern("MM");
             DateTimeFormatter formatterDay = DateTimeFormatter.ofPattern("dd");
 
-
             List<VehicleInfoAuxDTO> vehiculos = Arrays.asList(getVehiculo());
-            Map<String, Object> parameters = new HashMap();
+            Map<String, Object> parameters = new HashMap<>();
             parameters.put("nonewsoat", getVehiculo().getNonewsoat());
             parameters.put("placa", getVehiculo().getPlaca());
             parameters.put("clase", getVehiculo().getClase());
@@ -68,25 +67,22 @@ public class Soat {
             parameters.put("mmvennusoat", fechaFinal.format(formatterMonth));
             parameters.put("ddvennusoat", fechaFinal.format(formatterDay));
             parameters.put("codigotarifa", getVehiculo().getCodigotarifa());
-            parameters.put("costototal", ((getVehiculo().getCostototal())));
-            parameters.put("prima", ((getVehiculo().getPrima())));
-            parameters.put("contribucion", ((getVehiculo().getContribucion())));
-            parameters.put("runt", ((getVehiculo().getRunt())));
+            parameters.put("costototal", getVehiculo().getCostototal());
+            parameters.put("prima", getVehiculo().getPrima());
+            parameters.put("contribucion", getVehiculo().getContribucion());
+            parameters.put("runt", getVehiculo().getRunt());
 
             System.out.println(getVehiculo().toString() + " AQUI TODO BIEN");
-            InputStream inputStream = null;
-            JasperReport jasperReport = null;
-            try {
-                // Obtener el InputStream del recurso
-                inputStream = getClass().getClassLoader().getResourceAsStream("/soatV2.jrxml");
-                if (inputStream == null) {
-                    throw new RuntimeException("No se pudo encontrar el archivo soatV2.jrxml.");
-                }
 
+            InputStream inputStream = getClass().getClassLoader().getResourceAsStream("/soatV2.jrxml");
+            if (inputStream == null) {
+                throw new RuntimeException("No se pudo encontrar el archivo soatV2.jrxml.");
+            }
+
+            JasperReport jasperReport;
+            try {
                 // Compilar el reporte Jasper
                 jasperReport = JasperCompileManager.compileReport(inputStream);
-            } catch (JRException e) {
-                e.printStackTrace();
             } finally {
                 // Asegurarse de cerrar el flujo en el bloque finally
                 if (inputStream != null) {
@@ -98,20 +94,17 @@ public class Soat {
                 }
             }
 
-
-            jasperReport = JasperCompileManager.compileReport(inputStream);
-
-
             System.out.println("DIFERENTE DE NULL");
             System.out.println("- PASO 1");
 
             System.out.println("- PASO 2");
 
-            JRBeanCollectionDataSource dataSource = new JRBeanCollectionDataSource(vehiculos);
             System.out.println("- PASO 3");
 
-            JasperPrint print = JasperFillManager.fillReport(jasperReport, parameters, dataSource);
+            JRBeanCollectionDataSource dataSource = new JRBeanCollectionDataSource(vehiculos);
             System.out.println("- PASO 4");
+
+            JasperPrint print = JasperFillManager.fillReport(jasperReport, parameters, dataSource);
 
             System.out.println("Propiedades del JasperPrint:");
             for (String propertyName : print.getPropertyNames()) {
@@ -121,9 +114,10 @@ public class Soat {
             return JasperExportManager.exportReportToPdf(print);
 
         } catch (Exception e) {
-            System.out.println("ERROR" + e.getMessage());
+            System.out.println("ERROR: " + e.getMessage());
             e.printStackTrace(); // Añadido para depuración
             throw new RuntimeException(e);
         }
     }
+
 }
