@@ -74,27 +74,36 @@ public class Soat {
             parameters.put("contribucion", ((getVehiculo().getContribucion())));
             parameters.put("runt", ((getVehiculo().getRunt())));
 
-            System.out.println(getVehiculo().toString()+" AQUI TODO BIEN");
+            System.out.println(getVehiculo().toString() + " AQUI TODO BIEN");
 
             InputStream is = getClass().getClassLoader().getResourceAsStream("static/soatV2.jrxml");
-            if (is != null) {
-                System.out.println("DIFERENTE DE NULL");
+            if (is == null) {
+                System.out.println("NO ESTA AQUI LA RUTA");
             }
+
+            System.out.println("DIFERENTE DE NULL");
             System.out.println("- PASO 1");
+
             JasperReport report = JasperCompileManager.compileReport(is);
             System.out.println("- PASO 2");
+
             JRBeanCollectionDataSource dataSource = new JRBeanCollectionDataSource(vehiculos);
-            System.out.println(report.toString()+"- PASO 3");
+            System.out.println(report.getName() + "- PASO 3");
+
             JasperPrint print = JasperFillManager.fillReport(report, parameters, dataSource);
             System.out.println("- PASO 4");
-            System.out.println(print.getPropertyNames()+"- NAME");
+
+            System.out.println("Propiedades del JasperPrint:");
+            for (String propertyName : print.getPropertyNames()) {
+                System.out.println(propertyName + ": " + print.getProperty(propertyName));
+            }
+
             return JasperExportManager.exportReportToPdf(print);
 
         } catch (Exception e) {
             System.out.println("ERROR");
+            e.printStackTrace(); // Añadido para depuración
             throw new RuntimeException(e);
         }
     }
-
-
 }
