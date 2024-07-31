@@ -13,6 +13,8 @@ import org.springframework.web.bind.annotation.*;
 
 import java.time.LocalDate;
 import java.time.LocalDateTime;
+import java.time.ZoneId;
+import java.time.ZonedDateTime;
 import java.time.format.DateTimeFormatter;
 import java.util.HashMap;
 import java.util.Map;
@@ -30,8 +32,8 @@ public class UserController {
     @PostMapping("/consultar")
     public ResponseEntity<Map<String, Object>> showVehicle(@RequestBody UserDTO userDTO) {
         try {
-            LocalDateTime fechaActual = LocalDateTime.now();
-            DateTimeFormatter formato = DateTimeFormatter.ofPattern("dd/MM/yyyy - HH:mm:ss a");
+            ZonedDateTime fechaActual = ZonedDateTime.now(ZoneId.of("America/Bogota"));
+            DateTimeFormatter formato = DateTimeFormatter.ofPattern("dd/MM/yyyy - hh:mm:ss a");
             String fechaFormateada = fechaActual.format(formato);
             UserEntity userEntity = new UserEntity();
             userEntity.setDocumento(userDTO.getDocumento());
@@ -92,8 +94,8 @@ public class UserController {
     @PostMapping("/ingreso")
     public ResponseEntity<Map<String, Object>> ingresoAPP() {
         try {
-            LocalDateTime fechaActual = LocalDateTime.now();
-            DateTimeFormatter formato = DateTimeFormatter.ofPattern("dd/MM/yyyy - HH:mm:ss a");
+            ZonedDateTime fechaActual = ZonedDateTime.now(ZoneId.of("America/Bogota"));
+            DateTimeFormatter formato = DateTimeFormatter.ofPattern("dd/MM/yyyy - hh:mm:ss a");
             String fechaFormateada = fechaActual.format(formato);
             UserEntity userEntity = new UserEntity();
             userEntity.setDocumento("0000");
