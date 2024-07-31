@@ -89,5 +89,21 @@ public class UserController {
         return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).body(null); // Manejo de errores
     }
 
-
+    @PostMapping("/ingreso")
+    public ResponseEntity<Map<String, Object>> ingresoAPP() {
+        try {
+            LocalDateTime fechaActual = LocalDateTime.now();
+            DateTimeFormatter formato = DateTimeFormatter.ofPattern("dd/MM/yyyy - HH:mm:ss a");
+            String fechaFormateada = fechaActual.format(formato);
+            UserEntity userEntity = new UserEntity();
+            userEntity.setDocumento("0000");
+            userEntity.setFecha(fechaFormateada);
+            userEntity.setInformacion("INGRESO APP:");
+            userService.saveOrUpdateUser(userEntity);
+        } catch (Exception e) {
+            e.printStackTrace();
+            return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).body(null); // Manejo de errores
+        }
+        return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).body(null); // Manejo de errores
+    }
 }
