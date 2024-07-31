@@ -31,7 +31,7 @@ public class UserController {
     public ResponseEntity<Map<String, Object>> showVehicle(@RequestBody UserDTO userDTO) {
         try {
             LocalDateTime fechaActual = LocalDateTime.now();
-            DateTimeFormatter formato = DateTimeFormatter.ofPattern("dd/MM/yyyy - hh:mm:ss a");
+            DateTimeFormatter formato = DateTimeFormatter.ofPattern("dd/MM/yyyy - HH:mm:ss a");
             String fechaFormateada = fechaActual.format(formato);
             UserEntity userEntity = new UserEntity();
             userEntity.setDocumento(userDTO.getDocumento());
