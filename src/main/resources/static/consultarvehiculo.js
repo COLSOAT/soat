@@ -1,4 +1,6 @@
 function enviarDatos() {
+    // Mostrar la imagen SVG
+    document.getElementById('loading').style.display = 'block';
     // Obtener los valores de los inputs
     const placa = document.getElementById('txtPlaca').value;
     const documento = document.getElementById('txtDocumentoIdentidad').value;
@@ -29,10 +31,15 @@ function enviarDatos() {
             // Guardar los datos en localStorage
             localStorage.setItem('vehicleData', JSON.stringify(data));
 
+            // Ocultar la imagen SVG
+            document.getElementById('loading').style.display = 'none';
+
             // Redirigir a la nueva página
             window.location.href = 'pagosPSE.html';
         })
         .catch((error) => {
+            // Ocultar la imagen SVG
+            document.getElementById('loading').style.display = 'none';
             console.error('Error:', error);
             window.location.href = 'error404.html';
         });

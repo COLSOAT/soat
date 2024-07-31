@@ -86,8 +86,8 @@ public class PagoPSEController {
                     .paymentMethodId("pse")
                     .additionalInfo(additionalInfo)
                     .transactionDetails(transactionDetails)
-                    .notificationUrl("https://chatgpt.com/")
-                    .callbackUrl("https://www.unad.edu.co")
+                    .notificationUrl("https://r5soat-faf3abc78f43.herokuapp.com/compra-completada.html")
+                    .callbackUrl("https://r5soat-faf3abc78f43.herokuapp.com/index.html")
                     .payer(payer)
                     .build();
 
