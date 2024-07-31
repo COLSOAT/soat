@@ -81,7 +81,7 @@ public class PagoPSEController {
                     .build();
 
             PaymentCreateRequest paymentCreateRequest = PaymentCreateRequest.builder()
-                    .transactionAmount(new BigDecimal(7000))
+                    .transactionAmount(new BigDecimal(pagoPseDTO.getValorPagoBigDecimal()))
                     .description("Product description")
                     .paymentMethodId("pse")
                     .additionalInfo(additionalInfo)
