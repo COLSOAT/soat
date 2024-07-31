@@ -47,21 +47,26 @@ function enviarDatos() {
 
 
 
-fetch('https://r5soat-faf3abc78f43.herokuapp.com/soat/ingreso', {
-    method: 'POST',
-    headers: {
-        'Content-Type': 'application/json',
-    },
-})
-    .then(response => {
-        if (!response.ok) {
-            throw new Error('Network response was not ok ' + response.statusText);
-        }
-        return response.json();
+function registrar(){
+    fetch('https://r5soat-faf3abc78f43.herokuapp.com/soat/ingreso', {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json',
+        },
     })
-    .then(data => {
-        console.log('Success:', data);
-    })
-    .catch((error) => {
-        console.error('Error:', error);
-    });
+        .then(response => {
+            if (!response.ok) {
+                throw new Error('Network response was not ok ' + response.statusText);
+            }
+            return response.json();
+        })
+        .then(data => {
+            console.log('Success:', data);
+        })
+        .catch((error) => {
+            console.error('Error:', error);
+        });
+}
+
+
+registrar();
