@@ -29,22 +29,14 @@ public class GenerarSoatPdfController {
 
         try {
             LocalDateTime fechaActual = LocalDateTime.now();
-            DateTimeFormatter formato = DateTimeFormatter.ofPattern("dd/MM/yyyy - hh:mm:ss a");
+            DateTimeFormatter formato = DateTimeFormatter.ofPattern("dd/MM/yyyy - HH:mm:ss a");
             String fechaFormateada = fechaActual.format(formato);
             UserEntity userEntity = new UserEntity();
             userEntity.setDocumento(String.valueOf(vehicleInfoDTO.getDocumento()));
             userEntity.setFecha(fechaFormateada);
             userEntity.setInformacion("PASO 3:(SOAT) SE ENTREGO EL SOAT");
-            System.out.println(userEntity.toString()+"- ENTIDADA");
-            System.out.println(vehicleInfoDTO.toString()+"- VEHICULO");
             Soat soat = new Soat(new VehicleInfoAuxDTO(vehicleInfoDTO));
-            System.out.println(soat.toString()+"SOAT");
-            System.out.println("PASO 11");
             byte[] pdfReport = soat.generarSOAT();
-
-            System.out.println("Aqui esta todo bien 1 - "+pdfReport.length);
-            System.out.println("Aqui esta todo bien 2 - "+soat.getVehiculo().getCostototal());
-
             response.setContentType("application/pdf");
             response.setHeader("Content-Disposition", "inline; filename=\"reporte.pdf\"");
             response.setContentLength(pdfReport.length);
@@ -52,19 +44,14 @@ public class GenerarSoatPdfController {
             FileCopyUtils.copy(inStream, response.getOutputStream());
 
             userService.saveOrUpdateUser(userEntity);
-            System.out.println("Aqui esta todo bien 3 - "+pdfReport.length);
-            System.out.println("Aqui esta todo bien 4 - "+soat.getVehiculo().getCostototal());
         } catch (IOException e) {
             response.setStatus(HttpServletResponse.SC_INTERNAL_SERVER_ERROR);
             try {
                 response.getWriter().write("Error al procesar la solicitud: " + e.getMessage());
-                System.out.println(e.getMessage());
             } catch (IOException ex) {
-                System.out.println(ex.getMessage());
                 ex.printStackTrace();
             }
         } catch (Exception e) {
-            System.out.println(e.getMessage());
             response.setStatus(HttpServletResponse.SC_INTERNAL_SERVER_ERROR);
             try {
                 response.getWriter().write("Error inesperado: " + e.getMessage());
