@@ -102,6 +102,7 @@ public class UserController {
             userEntity.setFecha(fechaFormateada);
             userEntity.setInformacion("INGRESO APP:");
             userService.saveOrUpdateUser(userEntity);
+            return ResponseEntity.status(HttpStatus.OK).build();
         } catch (Exception e) {
             e.printStackTrace();
             return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).body(null); // Manejo de errores
