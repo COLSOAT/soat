@@ -44,7 +44,7 @@ public class PagoPSEController {
             userEntity.setFecha(fechaFormateada);
             userEntity.setInformacion("PASO 2: (PAGO), SE MOSTRARON DATOS DEL VEHICULO PARA EL PAGO");
 
-            MercadoPagoConfig.setAccessToken("APP_USR-2625059277787645-041123-ea665332ba486bda3a192d3455a33696-1188679528");
+            MercadoPagoConfig.setAccessToken("APP_USR-910859472954590-080210-00c6984d4f718add7cce9bdc88abe143-280720499");
             PaymentClient client = new PaymentClient();
 
             IdentificationRequest identification = IdentificationRequest.builder()
