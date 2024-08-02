@@ -44,11 +44,8 @@ public class VehicleInfoAuxDTO {
     private String compro = "NO";
 
     public VehicleInfoAuxDTO(VehicleInfoDTO infoDTO) {
-        // Fecha actual
-        LocalDate fechaActual = LocalDate.now();
-
-        // Fecha inicial: sumar un día a la fecha actual
-        LocalDate fechaInicial = fechaActual.plusDays(1);
+        // Fecha inicial: 30 de noviembre de 2024
+        LocalDate fechaInicial = LocalDate.of(2024, 11, 30);
 
         // Fecha final: sumar un año a la fecha inicial
         LocalDate fechaFinal = fechaInicial.plusYears(1);
