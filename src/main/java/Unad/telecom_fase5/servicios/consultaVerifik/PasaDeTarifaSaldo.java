@@ -6,7 +6,7 @@ import java.util.Locale;
 import java.util.Map;
 
 public class PasaDeTarifaSaldo {
-    int discountPercentage = 15;
+    int discountPercentage = 20;
     Map<Integer, Double> dataMap = new HashMap<>();
 
     public PasaDeTarifaSaldo() {
