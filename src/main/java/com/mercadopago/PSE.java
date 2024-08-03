@@ -1,5 +1,6 @@
 package com.mercadopago;
 
+import Unad.telecom_fase5.UTILS;
 import com.mercadopago.client.common.IdentificationRequest;
 import com.mercadopago.client.payment.*;
 import com.mercadopago.client.paymentmethod.PaymentMethodClient;
@@ -21,7 +22,7 @@ import java.util.ArrayList;
 public class PSE {
     public static void main(String[] args) {
         try {
-            MercadoPagoConfig.setAccessToken("APP_USR-910859472954590-080210-00c6984d4f718add7cce9bdc88abe143-280720499");
+            MercadoPagoConfig.setAccessToken(UTILS.getTokenMercado());
             Long sNeki = null;
             PaymentMethodClient paymentMethodClient = new PaymentMethodClient();
             for (PaymentMethod result : paymentMethodClient.list().getResults()) {

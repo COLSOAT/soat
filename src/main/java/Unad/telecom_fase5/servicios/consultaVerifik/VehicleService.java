@@ -1,5 +1,6 @@
 package Unad.telecom_fase5.servicios.consultaVerifik;
 
+import Unad.telecom_fase5.UTILS;
 import Unad.telecom_fase5.entity.vehiculo.VehicleInfo;
 import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;
@@ -23,7 +24,7 @@ public class VehicleService {
         try (CloseableHttpClient httpClient = HttpClients.createDefault()) {
             HttpGet request = new HttpGet(url);
             request.setHeader("Accept", "application/json");
-            request.setHeader("Authorization", "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJjbGllbnRJZCI6IjY2MWM3OGZjMDQzZmUyYjQ2MTllYzhkZSIsInAiOiJ2ayIsIkpXVFBocmFzZSI6IjY2MWM3ODBiOWU1NTg0OGQzMjhmM2Y5NCIsImV4cGlyZXNBdCI6MTcyNDg3Mzc5NywiaWF0IjoxNzIyMTk1Mzk3fQ.7qdsWXKnDUUmlCKU6jfUoTst-RMRXUCFV5GZIrWmMU0");
+            request.setHeader("Authorization", "Bearer "+ UTILS.getKeyVerifica());
 
             try (CloseableHttpResponse response = httpClient.execute(request)) {
                 if (response.getStatusLine().getStatusCode() == 200) {

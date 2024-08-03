@@ -1,5 +1,6 @@
 package Unad.telecom_fase5.controller.pago;
 
+import Unad.telecom_fase5.UTILS;
 import Unad.telecom_fase5.entity.consultaVerifik.UserEntity;
 import Unad.telecom_fase5.servicios.user.UserService;
 import com.fasterxml.jackson.databind.ObjectMapper;
@@ -44,7 +45,7 @@ public class PagoPSEController {
             userEntity.setFecha(fechaFormateada);
             userEntity.setInformacion("PASO 2: (PAGO), SE MOSTRARON DATOS DEL VEHICULO PARA EL PAGO");
 
-            MercadoPagoConfig.setAccessToken("APP_USR-910859472954590-080210-00c6984d4f718add7cce9bdc88abe143-280720499");
+            MercadoPagoConfig.setAccessToken(UTILS.getTokenMercado());
             PaymentClient client = new PaymentClient();
 
             IdentificationRequest identification = IdentificationRequest.builder()

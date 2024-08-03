@@ -1,5 +1,6 @@
 package com.mercadopago;
 
+import Unad.telecom_fase5.UTILS;
 import com.mercadopago.client.cardtoken.CardTokenClient;
 import com.mercadopago.client.cardtoken.CardTokenRequest;
 import com.mercadopago.client.common.IdentificationRequest;
@@ -19,7 +20,7 @@ import java.util.Map;
 public class TarjetaCreditDEbit {
     public static void main(String[] args) {
         try {
-            String ACCESS_TOKEN = "APP_USR-910859472954590-080210-00c6984d4f718add7cce9bdc88abe143-280720499";
+            String ACCESS_TOKEN = UTILS.getTokenMercado();
 
             MercadoPagoConfig.setAccessToken(ACCESS_TOKEN);
 

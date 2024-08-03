@@ -1,5 +1,6 @@
 package Unad.telecom_fase5.controller.pago;
 
+import Unad.telecom_fase5.UTILS;
 import com.mercadopago.MercadoPagoConfig;
 import com.mercadopago.client.paymentmethod.PaymentMethodClient;
 import com.mercadopago.resources.paymentmethod.PaymentMethod;
@@ -17,7 +18,7 @@ public class MediosDepagoController {
     public ResponseEntity<List> mediosPagos() {
         List listMedios = null;
         try {
-            MercadoPagoConfig.setAccessToken("APP_USR-910859472954590-080210-00c6984d4f718add7cce9bdc88abe143-280720499");
+            MercadoPagoConfig.setAccessToken(UTILS.getTokenMercado());
             PaymentMethodClient paymentMethodClient = new PaymentMethodClient();
             for (PaymentMethod result : paymentMethodClient.list().getResults()) {
                 if (result.getId().equals("pse")) {
