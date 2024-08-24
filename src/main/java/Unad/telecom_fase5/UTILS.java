@@ -11,10 +11,9 @@ public class UTILS {
     public static String TOKEN_MERCADO;
 
     public static String getKeyVerifica() {
-        KEY_VERIFICA=keyVERIFIK_V3;
+        KEY_VERIFICA="eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJjbGllbnRJZCI6IjY2Y2E0ZTFlYzcxYTdkMDAwMzYyZmVkOCIsInAiOiJ2ayIsIkpXVFBocmFzZSI6IjY2Y2E0ZGQ3MDdiMGM5NDVkN2U5YTFjZSIsImV4cGlyZXNBdCI6MTcyNzIxMjcwMywiaWF0IjoxNzI0NTM0MzAzfQ.eW8DDV4lyFfg2OLGDZZqEMT-JPL30QJVBADYjN__baQ";
         return KEY_VERIFICA;
     }
-
 
 
     public static String getTokenMercado() {
