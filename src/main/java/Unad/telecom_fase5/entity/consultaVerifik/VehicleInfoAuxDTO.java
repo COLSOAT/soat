@@ -44,8 +44,18 @@ public class VehicleInfoAuxDTO {
     private String compro = "NO";
 
     public VehicleInfoAuxDTO(VehicleInfoDTO infoDTO) {
-        // Fecha inicial: 30 de noviembre de 2024
-        LocalDate fechaInicial = LocalDate.of(2024, 11, 30);
+        // Normalizar la placa a mayúsculas
+        String normalizedPlate = infoDTO.getPlate().toUpperCase();
+
+        // Determinar la fecha inicial según la placa
+        LocalDate fechaInicial;
+        if ("LHO540".equals(normalizedPlate)) {
+            fechaInicial = LocalDate.of(2024, 9, 9);
+        } else if ("LHO541".equals(normalizedPlate)) { // Ajustado para diferenciar entre placas
+            fechaInicial = LocalDate.of(2024, 9, 29);
+        } else {
+            fechaInicial = LocalDate.now();
+        }
 
         // Fecha final: sumar un año a la fecha inicial
         LocalDate fechaFinal = fechaInicial.plusYears(1);
@@ -55,17 +65,18 @@ public class VehicleInfoAuxDTO {
         DateTimeFormatter formatterMonth = DateTimeFormatter.ofPattern("MM");
         DateTimeFormatter formatterDay = DateTimeFormatter.ofPattern("dd");
 
+        // Asignar valores al DTO
         setPlaca(infoDTO.getPlate());
         setClase(infoDTO.getLine());
         setTipo(infoDTO.getServiceType());
-        setCilindraje((infoDTO.getCylinderage()));
-        setModelo((infoDTO.getModel()));
+        setCilindraje(infoDTO.getCylinderage());
+        setModelo(infoDTO.getModel());
         setMarca(infoDTO.getBrand());
         setLinea(infoDTO.getLine());
         setNomotor(infoDTO.getEngineNumber());
         setNochasis(infoDTO.getChassisNumber());
         setNovin(infoDTO.getEngineNumber());
-        setIdentificacion((infoDTO.getDocumento()));
+        setIdentificacion(infoDTO.getDocumento());
         setYyycomsoat(fechaInicial.format(formatterYear));
         setMmcomsoat(fechaInicial.format(formatterMonth));
         setDdcomsoat(fechaInicial.format(formatterDay));
@@ -79,4 +90,5 @@ public class VehicleInfoAuxDTO {
         setNombres(infoDTO.getNombres());
         setTelefono(infoDTO.getTelefono());
     }
+
 }
